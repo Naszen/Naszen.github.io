@@ -1,0 +1,23 @@
+Plantiario Privacy Policy
+Last updated: September 22, 2026
+Plantiario is an app for looking after houseplants. It has no servers of its own, no accounts, no ads, no analytics and no tracking. The developer receives none of your data.
+Where your data lives
+On your device and in your iCloud. Your plants, care history, diary and photos are stored on the device and synced across your devices through the private iCloud (CloudKit) database of your Apple account. App preferences sync through the iCloud key-value store. Only you can access that data; the developer has no access to it. It is governed by Apple's privacy policy.
+How to delete it. Deleting the app removes the copy on the device, but it does not delete your iCloud data. To delete it, remove your plants in the app or go to Settings › [your name] › iCloud › Manage Storage.
+Camera and photos. Used only when you choose to take or pick a photo. Photos are stored without location or EXIF metadata.
+Reminders. Local notifications scheduled on the device itself.
+Diary summary. Generated on device with the Apple Intelligence model; nothing leaves the device.
+Spotlight, widgets and Shortcuts. They work with on-device data.
+Identification and health check with Pl@ntNet (optional)
+These features only exist if you enter your own Pl@ntNet API key. Pl@ntNet is a service run by a French scientific consortium (CIRAD, INRAE, Inria and IRD). Without a key, the app never contacts Pl@ntNet.
+What is sent, and when. Only when you ask for it, by tapping "Identify" or "Analyze": the photos you chose (downsized, with no location or EXIF), your key and the app language, over an encrypted connection (HTTPS). Your plants, diary and any other data are never sent.
+What Pl@ntNet does. According to its terms, it does not store the submitted photos (they are only kept in server volatile memory) and it keeps a query history tied to your Pl@ntNet account. As with any connection, its servers see your IP address. That processing is governed by Pl@ntNet's terms, which you accept when creating your account there; your rights over that data are exercised with Pl@ntNet.
+Reference photos and quota. After identifying, the app downloads sample photos of each species from plantnet.org (with author and license) and checks how many identifications you have left. They are not stored.
+Your key. Stored encrypted in your iCloud Keychain so it is available on your devices. The app never shows it again and the developer never receives it. You can delete it in Settings, which removes it from all your devices.
+Results are automated guidance, not a diagnosis.
+App Store privacy label
+On the App Store, Plantiario declares "Photos": used for app functionality, linked to your identity and not used for tracking. This is because identification and health-check photos are sent to Pl@ntNet with your key, and Pl@ntNet keeps a query history tied to your account. Photos are sent without EXIF or location, and only when you ask.
+Children
+The app collects no personal data from anyone, including children.
+Changes and contact
+Changes to this policy will be posted on this page. For any question, write to naszen013@gmail.com.

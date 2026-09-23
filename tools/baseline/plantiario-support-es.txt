@@ -1,0 +1,24 @@
+Soporte de Plantiario
+Plantiario es una app para iPhone que te ayuda a cuidar tus plantas de interior: recordatorios de riego y abonado, diario de fotos, calendario de cuidados e identificación opcional de plantas con Pl@ntNet. Tus datos se guardan en tu dispositivo y en tu iCloud privado; no hay cuentas ni servidores propios.
+Contacto
+¿Tienes una duda, un problema o una sugerencia? Escribe a naszen013@gmail.com. Si es un error, indica tu modelo de iPhone, la versión de iOS y los pasos para reproducirlo.
+Preguntas frecuentes
+¿Cómo se sincronizan mis plantas entre dispositivos?
+Plantiario usa la base de datos privada de iCloud de tu cuenta de Apple. Para que funcione, inicia sesión con la misma cuenta de Apple en todos tus dispositivos y comprueba que iCloud está activado para Plantiario en Ajustes › [tu nombre] › iCloud. Los cambios pueden tardar unos minutos en aparecer y necesitan conexión a internet.
+¿Qué pasa si cierro sesión en iCloud?
+Tus datos siguen guardados en tu iCloud. Sin sesión, la app no sincroniza y el dispositivo puede dejar de mostrar las plantas de esa cuenta. Al volver a iniciar sesión con la misma cuenta de Apple, se descargan de nuevo. Si inicias sesión con otra cuenta, verás los datos de esa otra cuenta.
+¿Cómo consigo y pongo la clave gratuita de Pl@ntNet?
+Crea una cuenta gratuita en my.plantnet.org.
+En tu cuenta de Pl@ntNet, copia tu clave de API (API key).
+En Plantiario, abre Ajustes, ve al apartado de Pl@ntNet y pega la clave.
+La clave se guarda cifrada en tu Llavero de iCloud. El plan gratuito tiene un cupo de identificaciones; la app te muestra cuántas te quedan.
+No me llegan los avisos
+Comprueba el permiso en Ajustes de iOS › Notificaciones › Plantiario › Permitir notificaciones.
+Revisa que no tengas activado un modo de Concentración que silencie la app, ni el resumen programado para Plantiario.
+¿Cómo borro mis datos?
+Elimina las plantas en la app: se borran también de tu iCloud y de tus otros dispositivos.
+O bórralos todos en Ajustes › [tu nombre] › iCloud › Gestionar almacenamiento › Plantiario.
+Borrar la app no borra tus datos de iCloud.
+La clave de Pl@ntNet se borra en Ajustes de la app. El historial de consultas de Pl@ntNet se gestiona en tu cuenta de Pl@ntNet.
+Privacidad
+Sin analítica, publicidad ni rastreo. Lee la política de privacidad.

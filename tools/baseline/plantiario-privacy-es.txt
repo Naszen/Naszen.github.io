@@ -1,0 +1,23 @@
+Política de privacidad de Plantiario
+Última actualización: 22 de septiembre de 2026
+Plantiario es una app para cuidar plantas de interior. No tiene servidores propios, ni cuentas, ni publicidad, ni analítica, ni rastreo. El desarrollador no recibe ningún dato tuyo.
+Dónde están tus datos
+En tu dispositivo y en tu iCloud. Tus plantas, cuidados, diario y fotos se guardan en el dispositivo y se sincronizan entre tus dispositivos mediante la base de datos privada de iCloud (CloudKit) de tu cuenta de Apple. Las preferencias de la app se sincronizan con el almacén clave-valor de iCloud. Solo tú puedes acceder a esos datos; el desarrollador no tiene acceso a ellos. Se rigen por la política de privacidad de Apple.
+Cómo borrarlos. Borrar la app elimina la copia del dispositivo, pero no borra tus datos de iCloud. Para borrarlos, elimina las plantas en la app o ve a Ajustes › [tu nombre] › iCloud › Gestionar almacenamiento.
+Cámara y fotos. Solo se usan cuando eliges hacer o seleccionar una foto. Las fotos se guardan sin ubicación ni metadatos EXIF.
+Avisos. Son notificaciones locales programadas en el propio dispositivo.
+Resumen del diario. Se genera en el dispositivo con el modelo de Apple Intelligence; nada sale del dispositivo.
+Spotlight, widgets y Atajos. Funcionan con los datos del dispositivo.
+Identificación y revisión de salud con Pl@ntNet (opcional)
+Estas funciones solo existen si introduces tu propia clave de la API de Pl@ntNet, un servicio de un consorcio científico francés (CIRAD, INRAE, Inria e IRD). Sin clave, la app no contacta con Pl@ntNet.
+Qué se envía y cuándo. Solo cuando tú lo pides, al pulsar «Identificar» o «Analizar»: las fotos que hayas elegido (reducidas y sin ubicación ni EXIF), tu clave y el idioma de la app, por conexión cifrada (HTTPS). No se envían tus plantas, tu diario ni ningún otro dato.
+Qué hace Pl@ntNet. Según sus condiciones, no almacena las fotos enviadas (solo pasan por la memoria de sus servidores) y guarda un historial de consultas asociado a tu cuenta de Pl@ntNet. Como en cualquier conexión, sus servidores ven tu dirección IP. Ese tratamiento se rige por las condiciones de Pl@ntNet, que aceptas al crear tu cuenta allí; tus derechos sobre esos datos se ejercen ante Pl@ntNet.
+Fotos de referencia y cuota. Tras identificar, la app descarga de plantnet.org fotos de ejemplo de cada especie (con su autor y licencia) y consulta cuántas identificaciones te quedan. No se guardan.
+Tu clave. Se guarda cifrada en tu Llavero de iCloud para que esté en tus dispositivos. La app no la vuelve a mostrar y el desarrollador nunca la recibe. Puedes borrarla en Ajustes, y se borra de todos tus dispositivos.
+Los resultados son una orientación automática, no un diagnóstico.
+Etiqueta de privacidad en el App Store
+En el App Store, Plantiario declara «Fotos»: usadas para la funcionalidad de la app, vinculadas a tu identidad y sin rastreo. El motivo es que las fotos de identificación y de revisión de salud se envían a Pl@ntNet con tu clave, y Pl@ntNet guarda un historial de consultas ligado a tu cuenta. Las fotos se envían sin EXIF ni ubicación y solo cuando tú lo pides.
+Menores
+La app no recoge datos personales de nadie, tampoco de menores.
+Cambios y contacto
+Los cambios de esta política se publicarán en esta página. Para cualquier duda, escribe a naszen013@gmail.com.

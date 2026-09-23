@@ -1,0 +1,24 @@
+Plantiario Support
+Plantiario is an iPhone app that helps you look after your houseplants: watering and feeding reminders, a photo diary, a care calendar and optional plant identification with Pl@ntNet. Your data is stored on your device and in your private iCloud; there are no accounts and no servers of its own.
+Contact
+Got a question, a problem or a suggestion? Write to naszen013@gmail.com. For a bug, please include your iPhone model, iOS version and the steps to reproduce it.
+Frequently asked questions
+How are my plants synced across devices?
+Plantiario uses the private iCloud database of your Apple account. To make it work, sign in with the same Apple account on all your devices and check that iCloud is turned on for Plantiario in Settings › [your name] › iCloud. Changes may take a few minutes to appear and need an internet connection.
+What happens if I sign out of iCloud?
+Your data stays stored in your iCloud. While signed out, the app does not sync and the device may stop showing that account's plants. When you sign back in with the same Apple account, they are downloaded again. If you sign in with a different account, you will see that account's data.
+How do I get and enter the free Pl@ntNet key?
+Create a free account at my.plantnet.org.
+In your Pl@ntNet account, copy your API key.
+In Plantiario, open Settings, go to the Pl@ntNet section and paste the key.
+The key is stored encrypted in your iCloud Keychain. The free plan has an identification quota; the app shows how many you have left.
+Reminders are not arriving
+Check the permission in iOS Settings › Notifications › Plantiario › Allow Notifications.
+Make sure no Focus mode is silencing the app and that Scheduled Summary is off for Plantiario.
+How do I delete my data?
+Delete your plants in the app: they are also removed from your iCloud and your other devices.
+Or delete everything in Settings › [your name] › iCloud › Manage Storage › Plantiario.
+Deleting the app does not delete your iCloud data.
+The Pl@ntNet key is deleted in the app's Settings. Your Pl@ntNet query history is managed in your Pl@ntNet account.
+Privacy
+No analytics, ads or tracking. Read the privacy policy.
