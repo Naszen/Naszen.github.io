@@ -16,7 +16,7 @@
 <link rel="alternate" hreflang="en" href="https://naszen.github.io/cooktribe/privacy/?lang=en">
 <link rel="alternate" hreflang="x-default" href="https://naszen.github.io/cooktribe/privacy/">
 <script>
-(function(){var d=document.documentElement,l=null;d.classList.add('js');
+(function(){var d=document.documentElement,l=null;d.classList.add('js');setTimeout(function(){if(!d.classList.contains('site-ready'))d.classList.add('no-anim')},2500);
 try{l=new URLSearchParams(location.search).get('lang')}catch(e){}
 if(l!=='es'&&l!=='en'){try{l=localStorage.getItem('lang')}catch(e){l=null}}
 if(l!=='es'&&l!=='en'){l=/^en\b/i.test(navigator.language||'')?'en':'es'}

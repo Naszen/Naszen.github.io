@@ -18,15 +18,26 @@ function walk(dir, out = []) {
 }
 const files = walk(ROOT);
 const html = files.filter(f => f.endsWith('.html'));
-const text = files.filter(f => /\.(html|css|js|txt|md|json|xml)$/.test(f));
+// GitHub Pages publica TODO el repo: las cadenas prohibidas se buscan también en tools/ y docs/
+const PUBLISHED_IGNORE = new Set(['.git', 'node_modules', '.superpowers']);
+function walkAll(dir, out = []) {
+  for (const n of readdirSync(dir)) {
+    if (PUBLISHED_IGNORE.has(n)) continue;
+    const p = join(dir, n);
+    statSync(p).isDirectory() ? walkAll(p, out) : out.push(p);
+  }
+  return out;
+}
+const text = walkAll(ROOT).filter(f => /\.(html|css|js|mjs|sh|txt|md|json|xml)$/.test(f));
 
 // 1. Cadenas prohibidas en archivos servidos
+const PHONE = new RegExp(['67' + '9', '5' + '9', '6' + '2', '7' + '1'].join('\\s?'));
 for (const f of text) {
   const s = readFileSync(f, 'utf8');
-  if (/outlook/i.test(s)) err('forbidden', f, 'contiene "outlook"');
-  if (/dropalert/i.test(s)) err('forbidden', f, 'menciona DropAlert');
-  if (/bootstrap|jquery|now-ui|aos\.js/i.test(s)) err('forbidden', f, 'referencia a dependencias antiguas');
-  if (/679\s?59\s?62\s?71|679596271/.test(s) && !f.includes(`${'/'}cv${'/'}`)) err('phone', f, 'teléfono fuera de /cv/');
+  if (new RegExp('out' + 'look', 'i').test(s)) err('forbidden', f, 'contiene el email antiguo');
+  if (new RegExp('drop' + 'alert', 'i').test(s)) err('forbidden', f, 'menciona la app oculta');
+  if (new RegExp(['boot' + 'strap', 'jq' + 'uery', 'now' + '-ui', 'aos' + '\\.js'].join('|'), 'i').test(s)) err('forbidden', f, 'referencia a dependencias antiguas');
+  if (PHONE.test(s) && !f.includes(`${'/'}cv${'/'}`)) err('phone', f, 'teléfono fuera de /cv/');
 }
 
 // 2. Enlaces y recursos locales

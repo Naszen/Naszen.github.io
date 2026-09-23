@@ -73,10 +73,15 @@
 
   // Secciones vistas (una vez por página y visita, ≥40 %)
   const seen = new Set();
+  // Cuenta como vista al ver el 40 % de la sección o, si es más alta que la pantalla, al ocupar el 40 % de la pantalla
   const io = new IntersectionObserver(es => es.forEach(en => {
     const id = en.target.dataset.section;
-    if (en.isIntersecting && !seen.has(id)) { seen.add(id); track('section_view', { section: id }); io.unobserve(en.target); }
-  }), { threshold: 0.4 });
+    const vh = en.rootBounds ? en.rootBounds.height : innerHeight;
+    const needed = 0.4 * Math.min(en.boundingClientRect.height, vh);
+    if (en.isIntersecting && en.intersectionRect.height >= needed && !seen.has(id)) {
+      seen.add(id); track('section_view', { section: id }); io.unobserve(en.target);
+    }
+  }), { threshold: Array.from({ length: 21 }, (_, i) => i / 20) });
   document.querySelectorAll('[data-section]').forEach(s => io.observe(s));
 
   // Aviso de consentimiento

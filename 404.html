@@ -9,7 +9,7 @@
 <meta name="theme-color" content="#0A0A0F">
 <link rel="icon" href="/favicon.ico">
 <script>
-(function(){var d=document.documentElement,l=null;d.classList.add('js');
+(function(){var d=document.documentElement,l=null;d.classList.add('js');setTimeout(function(){if(!d.classList.contains('site-ready'))d.classList.add('no-anim')},2500);
 try{l=new URLSearchParams(location.search).get('lang')}catch(e){}
 if(l!=='es'&&l!=='en'){try{l=localStorage.getItem('lang')}catch(e){l=null}}
 if(l!=='es'&&l!=='en'){l=/^en\b/i.test(navigator.language||'')?'en':'es'}

@@ -232,3 +232,5 @@ code{font:500 .9em var(--f-mono);background:var(--surface-2);padding:1px 6px;bor
 .app-note{color:var(--faint);font-size:14px}
 .app-note a{color:var(--muted)}
 .back-link{display:inline-flex;align-items:center;gap:6px}
+/* Red de seguridad: si site.js no se ejecuta, se muestra todo sin animación */
+.no-anim .reveal,.no-anim .hero__title .word{opacity:1 !important;transform:none !important;filter:none !important}

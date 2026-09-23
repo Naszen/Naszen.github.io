@@ -1,4 +1,5 @@
 /* Interacciones del sitio. Todo es mejora progresiva: sin JS, el contenido se ve completo. */
+document.documentElement.classList.add('site-ready');
 const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
 const finePointer = matchMedia('(pointer: fine)').matches;
 
