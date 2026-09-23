@@ -68,7 +68,7 @@ p{margin:0}
 .notfound__cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:10px}
 /* ============ Portada ============ */
 .hero{position:relative;min-height:100svh;display:grid;align-items:center;padding:140px 0 90px;overflow:hidden;isolation:isolate;
-  background:radial-gradient(1100px 700px at 85% -10%,#2a1b5e 0%,transparent 60%),radial-gradient(800px 600px at -10% 110%,rgba(0,196,140,.14),transparent 60%),var(--bg)}
+  background:linear-gradient(180deg,transparent 70%,var(--bg)),radial-gradient(1100px 700px at 85% -10%,#2a1b5e 0%,transparent 60%),radial-gradient(800px 600px at -10% 110%,rgba(0,196,140,.14),transparent 60%),var(--bg)}
 .hero::before{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;background:radial-gradient(600px circle at var(--mx,70%) var(--my,20%),rgba(133,103,255,.2),transparent 60%);transition:background .1s}
 .hero::after{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;opacity:.05;mix-blend-mode:overlay;
   background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
@@ -205,3 +205,30 @@ code{font:500 .9em var(--f-mono);background:var(--surface-2);padding:1px 6px;bor
 .consent{position:fixed;left:50%;bottom:16px;transform:translateX(-50%);z-index:60;width:min(560px,calc(100% - 32px));padding:18px 20px;border-radius:20px;background:rgba(16,16,24,.9);border:1px solid var(--border);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);font-size:14px;color:var(--muted);box-shadow:0 20px 60px rgba(0,0,0,.5)}
 .consent__actions{display:flex;gap:10px;margin-top:12px;flex-wrap:wrap}
 .consent .btn{min-height:40px;padding:0 18px;font-size:14px}
+/* ============ Página de app ============ */
+.app-hero{position:relative;min-height:88svh;display:grid;align-items:center;text-align:center;padding:140px 0 70px;overflow:hidden;isolation:isolate;
+  background:linear-gradient(180deg,transparent 65%,var(--bg)),radial-gradient(900px circle at 50% -5%,color-mix(in srgb,var(--app) 38%,transparent),transparent 62%),radial-gradient(500px circle at 85% 90%,color-mix(in srgb,var(--app) 14%,transparent),transparent 70%),var(--bg)}
+.app-hero::before{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;background:radial-gradient(520px circle at var(--mx,50%) var(--my,30%),color-mix(in srgb,var(--app) 18%,transparent),transparent 60%)}
+.app-hero .container{display:grid;justify-items:center;gap:18px}
+.app-hero__icon{width:160px;height:160px;border-radius:22.5%;box-shadow:0 30px 80px -20px color-mix(in srgb,var(--app) 80%,transparent),0 0 0 1px rgba(255,255,255,.08);-webkit-box-reflect:below 10px linear-gradient(transparent 72%,rgba(255,255,255,.16))}
+.app-hero h1{font-size:clamp(3rem,9vw,6.4rem);letter-spacing:-.05em;margin-top:34px}
+.app-hero__tagline{font-size:clamp(1.15rem,2.2vw,1.6rem);color:var(--muted);max-width:30ch}
+.app-hero__meta{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;list-style:none;padding:0;margin:8px 0 0}
+.features{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px;margin-top:44px}
+.feature{padding:28px;position:relative;overflow:hidden}
+.feature::after{content:"";position:absolute;right:-30%;top:-40%;width:60%;aspect-ratio:1;border-radius:50%;background:var(--app);filter:blur(60px);opacity:0;transition:opacity .4s}
+.feature:hover::after{opacity:.16}
+.feature__icon{width:48px;height:48px;border-radius:14px;display:grid;place-items:center;color:var(--app);background:color-mix(in srgb,var(--app) 14%,transparent);border:1px solid color-mix(in srgb,var(--app) 30%,transparent);margin-bottom:20px}
+.feature__icon svg{width:24px;height:24px}
+.feature h3{font-size:1.25rem;letter-spacing:-.02em;margin-bottom:8px;line-height:1.2;display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.feature p{color:var(--muted);font-size:15.5px}
+.feature .chip{font-size:11px;padding:5px 8px;color:var(--app);border-color:color-mix(in srgb,var(--app) 40%,transparent)}
+.built{display:flex;flex-wrap:wrap;gap:8px;list-style:none;padding:0;margin:28px 0 0}
+.built .chip{font-size:13.5px;padding:10px 14px;color:var(--text)}
+.app-privacy{padding:clamp(28px,5vw,52px);border-color:color-mix(in srgb,var(--app) 40%,transparent);display:grid;gap:18px;background:linear-gradient(135deg,color-mix(in srgb,var(--app) 12%,transparent),var(--surface) 60%)}
+.app-privacy h2{font-size:clamp(1.8rem,4vw,2.8rem)}
+.app-privacy p{color:rgba(244,242,238,.85);font-size:1.1rem;max-width:60ch}
+.app-privacy__actions{display:flex;gap:12px;flex-wrap:wrap}
+.app-note{color:var(--faint);font-size:14px}
+.app-note a{color:var(--muted)}
+.back-link{display:inline-flex;align-items:center;gap:6px}
