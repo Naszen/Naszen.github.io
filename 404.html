@@ -1,26 +1,46 @@
 <!DOCTYPE html>
-<html lang="es">
-
+<html lang="es" data-lang="es" data-title-es="Página no encontrada · David Tejedor" data-title-en="Page not found · David Tejedor" data-desc-es="Esta página no existe." data-desc-en="This page doesn't exist.">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Página no encontrada · David Tejedor Ayet</title>
-	<link rel="icon" href="/favicon.ico">
-	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet">
-	<link href="/css/bootstrap.min.css" rel="stylesheet">
-	<link href="/styles/main.css" rel="stylesheet">
-	<link href="/plantiario/plantiario.css" rel="stylesheet">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Página no encontrada · David Tejedor</title>
+<meta name="description" content="Esta página no existe.">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#0A0A0F">
+<link rel="icon" href="/favicon.ico">
+<script>
+(function(){var d=document.documentElement,l=null;d.classList.add('js');
+try{l=new URLSearchParams(location.search).get('lang')}catch(e){}
+if(l!=='es'&&l!=='en'){try{l=localStorage.getItem('lang')}catch(e){l=null}}
+if(l!=='es'&&l!=='en'){l=/^en\b/i.test(navigator.language||'')?'en':'es'}
+d.setAttribute('data-lang',l);d.lang=l;})();
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Inter+Tight:wght@600;800&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/site.css">
+<script type="module" src="/assets/js/i18n.js"></script>
 </head>
-
-<body>
-	<header class="pl-header">
-		<h1 class="h2 title">404</h1>
-		<p>Página no encontrada · <span lang="en">Page not found</span></p>
-		<nav class="pl-nav">
-			<a href="/">David Tejedor Ayet</a>
-			<a href="/plantiario/">Plantiario</a>
-		</nav>
-	</header>
+<body class="page-404">
+<a class="skip" href="#main"><span data-lang="es">Saltar al contenido</span><span data-lang="en">Skip to content</span></a>
+<header class="nav" data-nav>
+  <a class="nav__brand" href="/">David Tejedor<span class="nav__dot">.</span></a>
+  <div class="lang" role="group" aria-label="Idioma / Language">
+    <button type="button" data-set-lang="es">ES</button><button type="button" data-set-lang="en">EN</button>
+  </div>
+</header>
+<main id="main" class="notfound container">
+  <p class="notfound__code grad-text">404</p>
+  <h1><span data-lang="es">Esta página no existe.</span><span data-lang="en">This page doesn't exist.</span></h1>
+  <p class="section__lead"><span data-lang="es">Puede que el enlace esté mal escrito o que la página se haya movido.</span><span data-lang="en">The link may be mistyped, or the page may have moved.</span></p>
+  <div class="notfound__cta">
+    <a class="btn btn--primary" href="/"><span data-lang="es">Ir al portfolio</span><span data-lang="en">Go to portfolio</span></a>
+    <a class="btn" href="/plantiario/">Plantiario</a>
+  </div>
+</main>
+<footer class="footer">
+  <p>© 2026 David Tejedor Ayet · <span data-lang="es">Hecho a mano, sin frameworks.</span><span data-lang="en">Handmade, no frameworks.</span></p>
+  <p><a href="/">Portfolio</a> · <a href="https://www.linkedin.com/in/davidtejedorayet/">LinkedIn</a> · <a href="https://github.com/Naszen">GitHub</a></p>
+</footer>
 </body>
-
 </html>
