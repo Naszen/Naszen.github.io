@@ -1,7 +1,7 @@
 /* ============ Tokens ============ */
 :root{
   --bg:#0A0A0F; --bg-2:#101018; --surface:rgba(255,255,255,.06); --surface-2:rgba(255,255,255,.10);
-  --border:rgba(255,255,255,.10); --text:#F4F2EE; --muted:rgba(244,242,238,.65); --faint:rgba(244,242,238,.42);
+  --border:rgba(255,255,255,.10); --text:#F4F2EE; --muted:rgba(244,242,238,.65); --faint:rgba(244,242,238,.56);
   --grad:linear-gradient(90deg,#00C48C,#3D8BFF,#8567FF,#F2A516);
   --app:#8567FF;
   --radius:22px; --radius-sm:12px;
@@ -73,7 +73,7 @@ p{margin:0}
 .hero::after{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;opacity:.05;mix-blend-mode:overlay;
   background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
 .hero__orbs{position:absolute;inset:0;z-index:-1;pointer-events:none}
-.hero__orbs span{position:absolute;border-radius:50%;filter:blur(60px);opacity:.5;animation:float 18s ease-in-out infinite}
+.hero__orbs span{position:absolute;border-radius:50%;filter:blur(60px);opacity:.5}
 .hero__orbs span:nth-child(1){width:340px;height:340px;background:#00C48C;left:62%;top:58%;opacity:.18}
 .hero__orbs span:nth-child(2){width:260px;height:260px;background:#F2A516;left:80%;top:30%;opacity:.14;animation-delay:-6s}
 .hero__orbs span:nth-child(3){width:300px;height:300px;background:#3D8BFF;left:48%;top:8%;opacity:.16;animation-delay:-12s}
