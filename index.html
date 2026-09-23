@@ -1,594 +1,330 @@
 <!DOCTYPE html>
-<html lang="es-ES">
-
+<html lang="es" data-lang="es"
+  data-title-es="David Tejedor · Desarrollador iOS senior (SwiftUI)"
+  data-title-en="David Tejedor · Senior iOS Developer (SwiftUI)"
+  data-desc-es="Desarrollador iOS senior especializado en SwiftUI. Apps para Meliá, ONCE o Athletic Club, y cinco apps propias en camino."
+  data-desc-en="Senior iOS developer specialised in SwiftUI. Apps for Meliá, ONCE and Athletic Club, and five apps of my own on the way.">
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>David Tejedor Ayet</title>
-
-	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet">
-	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-	<link href="css/aos.css" rel="stylesheet">
-	<link href="css/bootstrap.min.css" rel="stylesheet">
-	<link href="styles/main.css" rel="stylesheet">
-
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-R2WHH3RXWM"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag() { dataLayer.push(arguments); }
-		gtag('js', new Date());
-
-		gtag('config', 'G-R2WHH3RXWM');
-	</script>
-
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>David Tejedor · Desarrollador iOS senior (SwiftUI)</title>
+<meta name="description" content="Desarrollador iOS senior especializado en SwiftUI. Apps para Meliá, ONCE o Athletic Club, y cinco apps propias en camino.">
+<meta name="theme-color" content="#0A0A0F">
+<link rel="icon" href="/favicon.ico">
+<link rel="canonical" href="https://naszen.github.io/">
+<link rel="alternate" hreflang="es" href="https://naszen.github.io/?lang=es">
+<link rel="alternate" hreflang="en" href="https://naszen.github.io/?lang=en">
+<link rel="alternate" hreflang="x-default" href="https://naszen.github.io/">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://naszen.github.io/">
+<meta property="og:title" content="David Tejedor · Senior iOS Developer (SwiftUI)">
+<meta property="og:description" content="Apps iOS que se sienten nativas. SwiftUI, Swift 6 y cinco apps propias en camino.">
+<meta property="og:image" content="https://naszen.github.io/assets/img/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<script>
+(function(){var d=document.documentElement,l=null;d.classList.add('js');
+try{l=new URLSearchParams(location.search).get('lang')}catch(e){}
+if(l!=='es'&&l!=='en'){try{l=localStorage.getItem('lang')}catch(e){l=null}}
+if(l!=='es'&&l!=='en'){l=/^en\b/i.test(navigator.language||'')?'en':'es'}
+d.setAttribute('data-lang',l);d.lang=l;})();
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Inter+Tight:wght@600;800&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/site.css">
+<script type="module" src="/assets/js/i18n.js"></script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Person","name":"David Tejedor Ayet","jobTitle":"Senior iOS Developer","url":"https://naszen.github.io/","email":"mailto:davidtejedorayet@gmail.com","address":{"@type":"PostalAddress","addressLocality":"Madrid","addressCountry":"ES"},"sameAs":["https://www.linkedin.com/in/davidtejedorayet/","https://github.com/Naszen"],"knowsAbout":["Swift","SwiftUI","iOS","SwiftData","CloudKit"]}
+</script>
 </head>
+<body id="top" data-content-group="home">
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <linearGradient id="grad" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#00C48C"/><stop offset=".4" stop-color="#3D8BFF"/><stop offset=".7" stop-color="#8567FF"/><stop offset="1" stop-color="#F2A516"/></linearGradient>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M7 17 17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="3" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="m4 7 8 6 8-6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-copy" viewBox="0 0 24 24"><rect x="8" y="8" width="12" height="12" rx="3" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M16 8V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2" fill="none" stroke="currentColor" stroke-width="1.8"/></symbol>
+    <symbol id="i-linkedin" viewBox="0 0 24 24"><path fill="currentColor" d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9.75h4v11H3zM9.5 9.75h3.8v1.5h.06c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.77 2.65 4.77 6.1v5.45h-4v-4.83c0-1.15-.02-2.63-1.6-2.63-1.61 0-1.85 1.25-1.85 2.55v4.91h-4z"/></symbol>
+    <symbol id="i-github" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.9 1.52 2.34 1.08 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.56-1.11-4.56-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02a9.5 9.5 0 0 1 5 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.69-4.57 4.93.36.31.68.92.68 1.86v2.75c0 .27.18.58.69.48A10 10 0 0 0 12 2z"/></symbol>
+    <symbol id="i-download" viewBox="0 0 24 24"><path d="M12 4v11m0 0-4.5-4.5M12 15l4.5-4.5M5 20h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  </defs>
+</svg>
 
-<body id="top">
-	<header>
-		<div class="profile-page sidebar-collapse">
-			<nav class="navbar navbar-expand-lg fixed-top navbar-transparent bg-primary" color-on-scroll="400">
-				<div class="container">
-					<div class="navbar-translate"><a class="navbar-brand" href="#" rel="tooltip">David Tejedor Ayet</a>
-						<button class="navbar-toggler navbar-toggler" type="button" data-toggle="collapse"
-							data-target="#navigation" aria-controls="navigation" aria-expanded="false"
-							aria-label="Toggle navigation"><span class="navbar-toggler-bar bar1"></span><span
-								class="navbar-toggler-bar bar2"></span><span
-								class="navbar-toggler-bar bar3"></span></button>
-					</div>
-					<div class="collapse navbar-collapse justify-content-end" id="navigation">
-						<ul class="navbar-nav">
-							<li class="nav-item"><a class="nav-link smooth-scroll" href="#about">Sobre mí</a></li>
-							<li class="nav-item"><a class="nav-link smooth-scroll" href="#skill">Programación</a></li>
-							<li class="nav-item"><a class="nav-link smooth-scroll" href="#cyber">Ciberseguridad</a></li>
-							<li class="nav-item"><a class="nav-link smooth-scroll" href="#portfolio">Portfolio</a></li>
-							<li class="nav-item"><a class="nav-link smooth-scroll" href="#experience">Experiencia</a>
-							</li>
-							<li class="nav-item"><a class="nav-link smooth-scroll" href="#formation">Formación</a></li>
-							<li class="nav-item"><a class="nav-link smooth-scroll" href="#contact">Contacto</a></li>
+<a class="skip" href="#main"><span data-lang="es">Saltar al contenido</span><span data-lang="en">Skip to content</span></a>
+<header class="nav" data-nav>
+  <a class="nav__brand" href="/">David Tejedor<span class="nav__dot">.</span></a>
+  <nav class="nav__links" aria-label="Principal">
+    <a href="#apps">Apps</a>
+    <a href="#como-trabajo"><span data-lang="es">Cómo trabajo</span><span data-lang="en">How I work</span></a>
+    <a href="#trayectoria"><span data-lang="es">Trayectoria</span><span data-lang="en">Experience</span></a>
+    <a href="#contacto"><span data-lang="es">Contacto</span><span data-lang="en">Contact</span></a>
+  </nav>
+  <a class="btn nav__cta" href="/cv/">CV</a>
+  <div class="lang" role="group" aria-label="Idioma / Language">
+    <button type="button" data-set-lang="es">ES</button><button type="button" data-set-lang="en">EN</button>
+  </div>
+</header>
 
-						</ul>
-					</div>
-				</div>
-			</nav>
-		</div>
-	</header>
-	<div class="page-content">
-		<div>
-			<div class="profile-page">
-				<div class="wrapper">
-					<div class="page-header page-header-small" filter-color="green">
-						<div class="page-header-image" data-parallax="true"
-							style="background-image: url('images/back.jpg');"></div>
-						<div class="container">
-							<div class="content-center">
-								<div class="cc-profile-image"><a href="#"><img src="images/me.png" alt="Image" /></a>
-								</div>
-								<div class="h2 title">David Tejedor Ayet</div>
-								<p class="category text-white">Desarrollador de aplicaciones móviles y técnico de
-									ciberseguridad</p><a class="btn btn-primary"
-									href="files/cv.pdf" download data-aos="zoom-in"
-									data-aos-anchor="data-aos-anchor">Descargar CV</a>
-							</div>
-						</div>
-						<div class="section">
-							<div class="container">
-								<div class="button-container"><a class="btn btn-default btn-round btn-lg btn-icon"
-										href="mailto:david.tejedor@outlook.com" rel="tooltip"
-										title="Correo electrónico"><i class="fa fa-envelope"></i></a><a
-										class="btn btn-default btn-round btn-lg btn-icon"
-										href="https://github.com/Naszen" rel="tooltip" title="Github"><i
-											class="fa fa-github"></i></a><a
-										class="btn btn-default btn-round btn-lg btn-icon" href="tel:+34679596271"
-										rel="tooltip" title="Teléfono"><i class="fa fa-phone"></i></a><a
-										class="btn btn-default btn-round btn-lg btn-icon"
-										href="https://www.linkedin.com/in/david-tejedor-ayet-8b10a2131/" rel="tooltip"
-										title="LinkedIn"><i class="fa fa-linkedin"></i></a></div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="section" id="about">
+<main id="main">
+  <!-- Hero -->
+  <section class="hero" data-glow data-section="hero">
+    <div class="hero__orbs" aria-hidden="true"><span></span><span></span><span></span></div>
+    <div class="container">
+      <p class="eyebrow reveal"><span data-lang="es">Madrid, España · iOS senior</span><span data-lang="en">Madrid, Spain · Senior iOS</span></p>
+      <h1 class="hero__title" data-hero-title>
+        <span data-lang="es">Apps iOS que se <span class="grad-text">sienten</span> nativas.</span>
+        <span data-lang="en">iOS apps that truly <span class="grad-text">feel</span> native.</span>
+      </h1>
+      <p class="hero__lead reveal" style="--i:3">
+        <span data-lang="es">Soy David Tejedor, desarrollador iOS senior especializado en SwiftUI. Desde 2019 llevo apps a la App Store para marcas como Meliá, ONCE o el Athletic Club. Ahora también construyo las mías.</span>
+        <span data-lang="en">I'm David Tejedor, a senior iOS developer specialised in SwiftUI. Since 2019 I've shipped App Store apps for brands like Meliá, ONCE and Athletic Club — and now I'm building my own.</span>
+      </p>
+      <div class="hero__cta reveal" style="--i:4">
+        <a class="btn btn--primary" href="#apps"><span data-lang="es">Ver mis apps</span><span data-lang="en">See my apps</span><svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        <a class="btn" href="/files/cv-es.pdf" data-cv-link data-ga="cv_download" download><svg aria-hidden="true"><use href="#i-download"/></svg><span data-lang="es">Descargar CV</span><span data-lang="en">Download CV</span></a>
+      </div>
+    </div>
+    <span class="hero__scroll" aria-hidden="true"></span>
+  </section>
 
+  <!-- Cifras -->
+  <section class="section" data-section="stats" style="padding-top:40px">
+    <div class="container">
+      <div class="stats">
+        <p class="stat glass reveal" style="--i:0"><span class="stat__n grad-text" data-count="7" data-suffix="+">7+</span><span class="stat__l"><span data-lang="es">años creando apps</span><span data-lang="en">years building apps</span></span></p>
+        <p class="stat glass reveal" style="--i:1"><span class="stat__n" data-count="5">5</span><span class="stat__l"><span data-lang="es">apps propias en camino</span><span data-lang="en">apps of my own on the way</span></span></p>
+        <p class="stat glass reveal" style="--i:2"><span class="stat__n" data-count="1400" data-suffix="+">1.400+</span><span class="stat__l"><span data-lang="es">tests automatizados en mis proyectos</span><span data-lang="en">automated tests across my projects</span></span></p>
+        <p class="stat glass reveal" style="--i:3"><span class="stat__n">Swift 6</span><span class="stat__l"><span data-lang="es">concurrencia estricta en todo</span><span data-lang="en">strict concurrency everywhere</span></span></p>
+      </div>
+      <div class="marquee reveal">
+        <p class="eyebrow marquee__label"><span data-lang="es">Han confiado en mi trabajo</span><span data-lang="en">Brands I've built for</span></p>
+        <div class="marquee__track">
+          <ul><li>Meliá</li><li>Grandvalira</li><li>ONCE</li><li>Athletic Club</li><li>Sodexo</li><li>Renault</li><li>Perfumerías Júlia</li><li>OBS</li><li>Attends</li></ul>
+          <ul aria-hidden="true"><li>Meliá</li><li>Grandvalira</li><li>ONCE</li><li>Athletic Club</li><li>Sodexo</li><li>Renault</li><li>Perfumerías Júlia</li><li>OBS</li><li>Attends</li></ul>
+        </div>
+      </div>
+    </div>
+  </section>
 
+  <!-- Apps -->
+  <section class="section" id="apps" data-section="apps">
+    <div class="container">
+      <p class="eyebrow reveal">Portfolio</p>
+      <h2 class="section__title reveal" style="--i:1"><span data-lang="es">Lo que estoy construyendo</span><span data-lang="en">What I'm building</span></h2>
+      <p class="section__lead reveal" style="--i:2"><span data-lang="es">Cinco apps propias, hechas de principio a fin en SwiftUI y Swift 6. Llegan pronto a la App Store.</span><span data-lang="en">Five apps of my own, built end to end in SwiftUI and Swift 6. Coming soon to the App Store.</span></p>
 
-				<div class="container">
-					<div class="card" data-aos="fade-up" data-aos-offset="10">
-						<div class="card-body">
-							<div class="h4 mt-0 title">¡Hola! Soy David</div>
-							<p>Me considero una persona alegre, optimista y con ganas de
-								comerse el mundo.</p>
-							<p>La informática es mi pasión y mi vocación desde que era niño
-								, por eso me esfuerzo cada día para superarme a
-								mí mismo y lograr mi objetivo, el cual era, es y será siempre aprender
-								todo lo que pueda de este mundo tan interesante como cambiante.</p>
-							<p>Soy una persona autodidacta, versátil y muy adaptable, capaz de
-								desenvolverse bien ante situaciones nuevas, además mi capacidad de comunicación y
-								organización me permite trabajar
-								bien tanto en grupo como en solitario.
-								Entre mis aficiones están el dibujo, la música y como
-								no, los videojuegos. </p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
+      <ul class="bento">
+        <li class="bento__card bento__card--big glass reveal" style="--app:#00C48C;--i:0" data-tilt>
+          <div class="bento__top">
+            <img class="bento__icon" src="/assets/img/apps/schede.png" srcset="/assets/img/apps/schede-256.png 256w, /assets/img/apps/schede.png 512w" sizes="120px" width="120" height="120" alt="" loading="lazy">
+            <span class="tag-soon"><span data-lang="es">Próximamente</span><span data-lang="en">Coming soon</span></span>
+          </div>
+          <div class="fc-stack" aria-hidden="true">
+            <div class="fc fc--3"></div><div class="fc fc--2"></div>
+            <div class="fc fc--1"><span class="fc__lang">IT → ES</span><strong class="fc__word">la mela</strong><span class="fc__tr">la manzana</span><span class="fc__ex">«Mangio una mela ogni giorno.»</span><span class="fc__rate"><i><span data-lang="es">Otra vez</span><span data-lang="en">Again</span></i><i><span data-lang="es">Difícil</span><span data-lang="en">Hard</span></i><i class="on"><span data-lang="es">Bien</span><span data-lang="en">Good</span></i><i><span data-lang="es">Fácil</span><span data-lang="en">Easy</span></i></span></div>
+          </div>
+          <h3><a class="bento__link" href="/schede/" data-ga="app_open" data-ga-app="schede" data-ga-location="bento">Schede</a></h3>
+          <p><span data-lang="es">Tarjetas de idiomas que se crean solas, con IA que no sale de tu iPhone.</span><span data-lang="en">Language flashcards that make themselves, with AI that never leaves your iPhone.</span></p>
+          <ul class="bento__chips"><li class="chip">Foundation Models</li><li class="chip">Live Activities</li><li class="chip">Safari Extension</li></ul>
+          <span class="bento__arrow" aria-hidden="true"><svg width="18" height="18"><use href="#i-arrow"/></svg></span>
+        </li>
+        <li class="bento__card glass reveal" style="--app:#F2A516;--i:1" data-tilt>
+          <div class="bento__top">
+            <img class="bento__icon" src="/assets/img/apps/keppi-256.png" srcset="/assets/img/apps/keppi-256.png 256w, /assets/img/apps/keppi.png 512w" sizes="72px" width="72" height="72" alt="" loading="lazy">
+            <span class="tag-soon"><span data-lang="es">Próximamente</span><span data-lang="en">Coming soon</span></span>
+          </div>
+          <h3><a class="bento__link" href="/keppi/" data-ga="app_open" data-ga-app="keppi" data-ga-location="bento">Keppi</a></h3>
+          <p><span data-lang="es">Listas tan rápidas como una nota, con una mascota que crece contigo.</span><span data-lang="en">Lists as fast as a sticky note, with a pet that grows with you.</span></p>
+          <ul class="bento__chips"><li class="chip">Offline-first sync</li><li class="chip">WidgetKit</li><li class="chip">macOS</li></ul>
+          <span class="bento__arrow" aria-hidden="true"><svg width="18" height="18"><use href="#i-arrow"/></svg></span>
+        </li>
+        <li class="bento__card glass reveal" style="--app:#2A9D84;--i:2" data-tilt>
+          <div class="bento__top">
+            <img class="bento__icon" src="/assets/img/apps/plantiario-256.png" srcset="/assets/img/apps/plantiario-256.png 256w, /assets/img/apps/plantiario.png 512w" sizes="72px" width="72" height="72" alt="" loading="lazy">
+            <span class="tag-soon"><span data-lang="es">Próximamente</span><span data-lang="en">Coming soon</span></span>
+          </div>
+          <h3><a class="bento__link" href="/plantiario/" data-ga="app_open" data-ga-app="plantiario" data-ga-location="bento">Plantiario</a></h3>
+          <p><span data-lang="es">Tus plantas, regadas a tiempo. Catálogo offline y diario de fotos.</span><span data-lang="en">Your plants, watered on time. Offline catalogue and photo diary.</span></p>
+          <ul class="bento__chips"><li class="chip">SwiftData + CloudKit</li><li class="chip"><span data-lang="es">6 idiomas</span><span data-lang="en">6 languages</span></li><li class="chip">App Intents</li></ul>
+          <span class="bento__arrow" aria-hidden="true"><svg width="18" height="18"><use href="#i-arrow"/></svg></span>
+        </li>
+        <li class="bento__card glass reveal" style="--app:#F0845C;--i:3" data-tilt>
+          <div class="bento__top">
+            <img class="bento__icon" src="/assets/img/apps/cooktribe.svg" width="72" height="72" alt="" loading="lazy">
+            <span class="tag-soon"><span data-lang="es">Próximamente</span><span data-lang="en">Coming soon</span></span>
+          </div>
+          <h3><a class="bento__link" href="/cooktribe/" data-ga="app_open" data-ga-app="cooktribe" data-ga-location="bento">CookTribe</a></h3>
+          <p><span data-lang="es">El recetario compartido de tu tribu: del plan semanal a la lista de la compra.</span><span data-lang="en">Your tribe's shared cookbook: from weekly plan to shopping list.</span></p>
+          <ul class="bento__chips"><li class="chip">SwiftData</li><li class="chip">CloudKit Sharing</li><li class="chip">iPad</li></ul>
+          <span class="bento__arrow" aria-hidden="true"><svg width="18" height="18"><use href="#i-arrow"/></svg></span>
+        </li>
+        <li class="bento__card glass reveal" style="--app:#FF5C1A;--i:4" data-tilt>
+          <div class="bento__top">
+            <img class="bento__icon" src="/assets/img/apps/quicksound-256.png" srcset="/assets/img/apps/quicksound-256.png 256w, /assets/img/apps/quicksound.png 512w" sizes="72px" width="72" height="72" alt="" loading="lazy">
+            <span class="tag-soon"><span data-lang="es">Próximamente</span><span data-lang="en">Coming soon</span></span>
+          </div>
+          <h3><a class="bento__link" href="/quicksound/" data-ga="app_open" data-ga-app="quicksound" data-ga-location="bento">Quick Sound</a></h3>
+          <p><span data-lang="es">Tu mesa de sonido de bolsillo: recorta, agrupa y lanza efectos al instante.</span><span data-lang="en">A pocket soundboard: trim, group and fire sounds instantly.</span></p>
+          <ul class="bento__chips"><li class="chip">AVAudioEngine</li><li class="chip">SwiftData</li><li class="chip">macOS</li></ul>
+          <span class="bento__arrow" aria-hidden="true"><svg width="18" height="18"><use href="#i-arrow"/></svg></span>
+        </li>
+      </ul>
+    </div>
+  </section>
 
+  <!-- Cómo trabajo -->
+  <section class="section" id="como-trabajo" data-section="how">
+    <div class="container">
+      <p class="eyebrow reveal"><span data-lang="es">Cómo trabajo</span><span data-lang="en">How I work</span></p>
+      <h2 class="section__title reveal" style="--i:1"><span data-lang="es">Oficio, criterio y un poco de obsesión.</span><span data-lang="en">Craft, judgement and a bit of obsession.</span></h2>
+      <div class="about glass reveal" style="--i:2">
+        <div class="about__photo"><img src="/assets/img/me.jpg" width="168" height="168" alt="David Tejedor" loading="lazy"></div>
+        <p>
+          <span data-lang="es">Me enganché a la informática de niño y no he parado de aprender. Hoy mi foco es SwiftUI: interfaces que se sienten de Apple, arquitectura limpia y tests que dan confianza para cambiar. Mi paso por la ciberseguridad me dejó una obsesión sana por la privacidad. Fuera del código: dibujo, música y videojuegos.</span>
+          <span data-lang="en">I got hooked on computers as a kid and never stopped learning. Today my focus is SwiftUI: interfaces that feel like Apple made them, clean architecture and tests that make change safe. My time in cybersecurity left me with a healthy obsession with privacy. Away from code: drawing, music and video games.</span>
+        </p>
+      </div>
+      <div class="pillars">
+        <article class="pillar glass reveal" style="--i:0">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 7 3 12l5 5M16 7l5 5-5 5M14 4l-4 16" fill="none" stroke="url(#grad)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <h3><span data-lang="es">SwiftUI de principio a fin</span><span data-lang="en">SwiftUI end to end</span></h3>
+          <p><span data-lang="es">Swift 6 con concurrencia estricta, <code>@Observable</code> y animaciones con intención.</span><span data-lang="en">Swift 6 with strict concurrency, <code>@Observable</code> and purposeful animation.</span></p>
+        </article>
+        <article class="pillar glass reveal" style="--i:1">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 3 8l9 5 9-5-9-5zM3 13l9 5 9-5M3 17.5l9 5 9-5" fill="none" stroke="url(#grad)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <h3><span data-lang="es">Arquitectura que aguanta</span><span data-lang="en">Architecture that lasts</span></h3>
+          <p><span data-lang="es">Capas Domain, Data y Presentation, inyección de dependencias y Swift Testing.</span><span data-lang="en">Domain, Data and Presentation layers, dependency injection and Swift Testing.</span></p>
+        </article>
+        <article class="pillar glass reveal" style="--i:2">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 4.5 6v5.5c0 4.6 3.2 8.2 7.5 9.5 4.3-1.3 7.5-4.9 7.5-9.5V6L12 3z" fill="none" stroke="url(#grad)" stroke-width="1.8" stroke-linejoin="round"/><path d="m9 12 2.2 2.2L15.5 10" fill="none" stroke="url(#grad)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <h3><span data-lang="es">Privacidad por diseño</span><span data-lang="en">Privacy by design</span></h3>
+          <p><span data-lang="es">Formación en ciberseguridad (pentesting web con OWASP, bootcamp en The Bridge). Mis apps no rastrean y tus datos viven en tu iCloud.</span><span data-lang="en">Cybersecurity background (web pentesting with OWASP, The Bridge bootcamp). My apps don't track you and your data lives in your iCloud.</span></p>
+        </article>
+        <article class="pillar glass reveal" style="--i:3">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v3M12 18v3M3 12h3M18 12h3M12 8.5 13.2 10.8 15.5 12l-2.3 1.2L12 15.5l-1.2-2.3L8.5 12l2.3-1.2z" fill="none" stroke="url(#grad)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="m5.6 5.6 1.8 1.8M16.6 16.6l1.8 1.8M5.6 18.4l1.8-1.8M16.6 7.4l1.8-1.8" fill="none" stroke="url(#grad)" stroke-width="1.8" stroke-linecap="round"/></svg>
+          <h3><span data-lang="es">Lo último de Apple</span><span data-lang="en">Apple's latest</span></h3>
+          <p><span data-lang="es">Apple Intelligence (Foundation Models), widgets, Live Activities, App Intents y Spotlight.</span><span data-lang="en">Apple Intelligence (Foundation Models), widgets, Live Activities, App Intents and Spotlight.</span></p>
+        </article>
+      </div>
+    </div>
+  </section>
 
-		<div class="section" id="skill">
-			<div class="container">
-				<div class="h4 text-center mb-4 title"> Tecnologías y skills en programación</div>
-				<div class="card" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-					<div class="card-body">
-							
-						<h4><b>Desarrollador iOS</b></h4>
-						<ul>
-							<li>
-								<p>Desarrollo de aplicaciones móviles especializado en entornos iOS
-									programados en <b>Swift</b></p>
-							</li>
-							<li>
-								<p>Conocimiento sobre <b>arquitecturas</b> de diseño: MVC, MVVM, MVP y VIPER<b></b>
-								</p>
-							</li>
-							<li>
-								<p>Trabajo en <b>equipo</b> bajo metodologías <b>ágiles</b>.
-								</p>
-							</li>
-							<li>
-								<p>Conocimiento sobre diseño <b>UI/UX</b>
-								</p>
-							</li>
-							<li>
-								<p>Diseño y desarrollo de <b>vistas</b> con <b>SwiftUI</b>
+  <!-- Trayectoria -->
+  <section class="section" id="trayectoria" data-section="experience">
+    <div class="container">
+      <p class="eyebrow reveal"><span data-lang="es">Trayectoria</span><span data-lang="en">Experience</span></p>
+      <h2 class="section__title reveal" style="--i:1"><span data-lang="es">Siete años llevando apps a la App Store.</span><span data-lang="en">Seven years shipping to the App Store.</span></h2>
+      <ol class="timeline" data-timeline>
+        <li class="timeline__item reveal">
+          <p class="eyebrow"><span data-lang="es">oct. 2021 – actualidad</span><span data-lang="en">Oct 2021 – present</span></p>
+          <h3>O2O · MO2O Digital Business &amp; Transformation</h3>
+          <p class="timeline__role"><span data-lang="es">Desarrollador iOS</span><span data-lang="en">iOS Developer</span></p>
+          <ul data-lang="es">
+            <li>Apps nativas en SwiftUI para Meliá, Grandvalira, ONCE, Athletic Club o Sodexo.</li>
+            <li>Del requisito a la App Store: análisis, UX con el cliente, betas en TestFlight, publicación y certificados.</li>
+            <li>Equipos Scrum reducidos, a veces coordinándolos. Firebase.</li>
+          </ul>
+          <ul data-lang="en">
+            <li>Native SwiftUI apps for Meliá, Grandvalira, ONCE, Athletic Club and Sodexo.</li>
+            <li>From requirements to the App Store: analysis, UX with the client, TestFlight betas, release and certificates.</li>
+            <li>Small Scrum teams, sometimes coordinating them. Firebase.</li>
+          </ul>
+        </li>
+        <li class="timeline__item reveal">
+          <p class="eyebrow"><span data-lang="es">sept. – oct. 2021</span><span data-lang="en">Sep – Oct 2021</span></p>
+          <h3>Proun</h3>
+          <p class="timeline__role"><span data-lang="es">Desarrollador iOS senior</span><span data-lang="en">Senior iOS Developer</span></p>
+          <ul data-lang="es"><li>Desarrollo y mantenimiento de apps en Swift y Objective-C, betas y publicación.</li></ul>
+          <ul data-lang="en"><li>Built and maintained apps in Swift and Objective-C, betas and releases.</li></ul>
+        </li>
+        <li class="timeline__item reveal">
+          <p class="eyebrow"><span data-lang="es">abr. – ago. 2021</span><span data-lang="en">Apr – Aug 2021</span></p>
+          <h3>Sidertia Solutions</h3>
+          <p class="timeline__role"><span data-lang="es">Técnico de ciberseguridad</span><span data-lang="en">Cybersecurity Analyst</span></p>
+          <ul data-lang="es"><li>Auditorías web en caja negra y gris (OWASP), análisis de riesgos e informes.</li></ul>
+          <ul data-lang="en"><li>Black-box and grey-box web audits (OWASP), risk analysis and reporting.</li></ul>
+        </li>
+        <li class="timeline__item reveal">
+          <p class="eyebrow"><span data-lang="es">ene. 2019 – nov. 2020</span><span data-lang="en">Jan 2019 – Nov 2020</span></p>
+          <h3>Vanadis</h3>
+          <p class="timeline__role"><span data-lang="es">Desarrollador de apps móviles</span><span data-lang="en">Mobile App Developer</span></p>
+          <ul data-lang="es">
+            <li>Apps nativas iOS y Android para Renault, Perfumerías Júlia, OBS o Attends.</li>
+            <li>Integración continua y trato directo con el cliente.</li>
+          </ul>
+          <ul data-lang="en">
+            <li>Native iOS and Android apps for Renault, Perfumerías Júlia, OBS and Attends.</li>
+            <li>Continuous integration and direct client work.</li>
+          </ul>
+        </li>
+      </ol>
+      <div class="edu">
+        <article class="glass reveal" style="--i:0">
+          <p class="eyebrow">The Bridge · 2020–2021</p>
+          <h3><span data-lang="es">Bootcamp en Ciberseguridad</span><span data-lang="en">Cybersecurity Bootcamp</span></h3>
+        </article>
+        <article class="glass reveal" style="--i:1">
+          <p class="eyebrow">CEV · 2017–2019</p>
+          <h3><span data-lang="es">CFGS Desarrollo de Aplicaciones Multiplataforma</span><span data-lang="en">Higher Diploma in Multiplatform App Development</span></h3>
+          <p><span data-lang="es">Nota media de sobresaliente.</span><span data-lang="en">Graduated with distinction.</span></p>
+        </article>
+        <article class="glass reveal" style="--i:2">
+          <p class="eyebrow">CEV · 2017–2019</p>
+          <h3>HND in Computing and Systems Development</h3>
+        </article>
+      </div>
+    </div>
+  </section>
 
-								</p>
-							</li>
-							<li>
-								<p>Conocimientos avanzados <b>de ciberseguridad y prevención de
-									incidentes.</b>
-									</p> 
-							</li>
-						</ul>
-						<h4><b>Otros lenguajes y tecnologías</b></h4>
+  <!-- Stack -->
+  <section class="section" id="stack" data-section="stack" style="padding-top:0">
+    <div class="container">
+      <p class="eyebrow reveal">Stack</p>
+      <h2 class="section__title reveal" style="--i:1"><span data-lang="es">Con qué construyo.</span><span data-lang="en">What I build with.</span></h2>
+      <div class="stack">
+        <div class="stack__group reveal">
+          <h3>iOS</h3>
+          <ul><li class="chip">Swift</li><li class="chip">SwiftUI</li><li class="chip">Swift Concurrency</li><li class="chip">SwiftData</li><li class="chip">Core Data</li><li class="chip">CloudKit</li><li class="chip">WidgetKit</li><li class="chip">ActivityKit</li><li class="chip">App Intents</li><li class="chip">Foundation Models</li><li class="chip">Vision</li><li class="chip">AVFoundation</li><li class="chip">UIKit</li><li class="chip">Objective-C</li><li class="chip">Combine</li></ul>
+        </div>
+        <div class="stack__group reveal" style="--i:1">
+          <h3><span data-lang="es">Calidad y entrega</span><span data-lang="en">Quality &amp; delivery</span></h3>
+          <ul><li class="chip">Swift Testing</li><li class="chip">XCTest</li><li class="chip">fastlane</li><li class="chip">TestFlight</li><li class="chip">Git</li></ul>
+        </div>
+        <div class="stack__group reveal" style="--i:2">
+          <h3><span data-lang="es">Backend y otros</span><span data-lang="en">Backend &amp; more</span></h3>
+          <ul><li class="chip">Firebase</li><li class="chip">Supabase</li><li class="chip">GRDB / SQLite</li><li class="chip">Kotlin / Android</li><li class="chip">Scrum</li></ul>
+        </div>
+      </div>
+    </div>
+  </section>
 
+  <!-- Contacto -->
+  <section class="section contact" id="contacto" data-section="contact">
+    <div class="container">
+      <p class="eyebrow reveal"><span data-lang="es">Contacto</span><span data-lang="en">Contact</span></p>
+      <h2 class="contact__title grad-text reveal" style="--i:1"><span data-lang="es">¿Hablamos?</span><span data-lang="en">Let's talk.</span></h2>
+      <p class="section__lead reveal" style="--i:2"><span data-lang="es">Si tienes un proyecto iOS entre manos o quieres charlar de SwiftUI, escríbeme.</span><span data-lang="en">If you've got an iOS project in mind or want to talk SwiftUI, drop me a line.</span></p>
+      <button type="button" class="contact__email reveal" style="--i:3" data-copy data-copy-value="davidtejedorayet@gmail.com" data-ga="email_copy" data-i18n-attr="aria-label" data-es-aria-label="Copiar email davidtejedorayet@gmail.com" data-en-aria-label="Copy email davidtejedorayet@gmail.com" aria-label="Copiar email davidtejedorayet@gmail.com">
+        <svg aria-hidden="true"><use href="#i-copy"/></svg>
+        <span class="contact__email-text">davidtejedorayet@gmail.com</span>
+        <span data-copied-label aria-live="polite"><span data-lang="es">¡Copiado!</span><span data-lang="en">Copied!</span></span>
+      </button>
+      <div class="contact__links reveal" style="--i:4">
+        <a class="btn" href="mailto:davidtejedorayet@gmail.com" data-ga="contact_click" data-ga-method="email"><svg aria-hidden="true"><use href="#i-mail"/></svg>Email</a>
+        <a class="btn" href="https://www.linkedin.com/in/davidtejedorayet/" data-ga="contact_click" data-ga-method="linkedin"><svg aria-hidden="true"><use href="#i-linkedin"/></svg>LinkedIn</a>
+        <a class="btn" href="https://github.com/Naszen" data-ga="contact_click" data-ga-method="github"><svg aria-hidden="true"><use href="#i-github"/></svg>GitHub</a>
+        <a class="btn" href="/cv/"><svg aria-hidden="true"><use href="#i-download"/></svg>CV</a>
+      </div>
+    </div>
+  </section>
+</main>
 
-					</div>
-					
-						<div class="row w-100 d-flex justify-content-center" style="float: left;">
-							<div class="col-md-2" style="max-width: 105px">
-								<img class="" src="images/swift.png" alt="">
-								<p class="text-center">Swift</p>
-							</div>
+<footer class="footer">
+  <p>© 2026 David Tejedor Ayet · <span data-lang="es">Hecho a mano, sin frameworks.</span><span data-lang="en">Handmade, no frameworks.</span></p>
+  <p><a href="/">Portfolio</a> · <a href="https://www.linkedin.com/in/davidtejedorayet/">LinkedIn</a> · <a href="https://github.com/Naszen">GitHub</a><span data-ga-only> · <button type="button" class="linklike" data-consent-open><span data-lang="es">Preferencias de cookies</span><span data-lang="en">Cookie preferences</span></button></span></p>
+</footer>
 
-							<div class="col-md-2" style="max-width:105px">
-								<img src="images/xcode.jpg" alt="">
-								<p class="text-center">Xcode</p>
-							</div>
-							<div class="col-md-2" style="max-width: 105px">
-								<img src="images/android-studio.png" alt="">
-								<p class="text-center">Android Studio</p>
-							</div>
-							<div class="col-md-2" style="max-width: 105px">
-								<img src="images/angular.png" alt="">
-								<p class="text-center">Angular</p>
-							</div>
-							<div class="col-md-2" style="max-width: 105px">
-								<img src="images/git.png" alt="">
-								<p class="text-center">Git</p>
-							</div>
-							<div class="col-md-2" style="max-width: 105px">
-								<img src="images/java.png" alt="">
-								<p class="text-center">Java</p>
-							</div>
-						</div>
-
-						<div class="row w-100 d-flex justify-content-center" style="float: left">
-							<div class="col-md-2" style="max-width: 105px">
-								<img src="images/unity.png" alt="">
-								<p class="text-center">Unity</p>
-							</div>
-
-							<div class="col-md-2" style="max-width: 105px">
-								<img src="images/php.png" alt="">
-								<p class="text-center">PHP</p>
-							</div>
-							<div class="col-md-2" style="max-width: 105px">
-								<img src="images/kotlin.png" alt="">
-								<p class="text-center">Kotlin</p>
-							</div>
-							<div class="col-md-2" style="max-width: 105px">
-								<img src="images/laravel.png" alt="">
-								<p class="text-center">Laravel</p>
-							</div>
-							<div class="col-md-2" style="max-width: 108px">
-								<img src="images/python.png" alt="">
-								<p class="text-center">Python</p>
-							</div>
-							<div class="col-md-2" style="max-width: 105px">
-								<img src="images/bash.png" alt="">
-								<p class="text-center">Bash</p>
-							</div>
-						</div>
-
-						
-					</div>
-					
-				</div>
-			</div>
-		</div>
-
-		<div class="section" id="cyber">
-			<div class="container cc-experience">
-				<div class="h4 text-center mb-4 title">Habilidades y competencias en ciberseguridad</div>
-				<div class="card">
-					<div class="row">
-						<div class="col-md-3 " data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
-							<div class="card-body ">
-								<img src="images/ciber.png" alt="">
-							</div>
-						</div>
-						<div class="col-md-9 bg-primary" data-aos="fade-left" data-aos-offset="50"
-							data-aos-duration="500" style="color: white;">
-							<div class="card-body">
-								<ul>
-									<li>
-										<p>Uso de técnicas y análisis <b>OSINT</b></p>
-									</li>
-									<li>
-										<p><b>Auditoría y pentesting </b>sobre aplicaciones WEB utilizando metodología
-											<b>OWASP</b> entre otras.</p>
-									</li>
-									<li>
-										<p>Explotación de sistemas informáticos Linux y Windows, <b>evasión</b> de
-											defensas y técnicas de <b>persistencia</b>.</p>
-									</li>
-									<li>
-										<p>Uso de herramientas como <b>Metasploit framework</b></p>
-									</li>
-									<li>
-										<p>Protección de activos, análisis forense y respuesta ante incidentes</p>
-									</li>
-									<li>
-										<p>Uso de sistemas <b>SIEM</b> </p>
-									</li>
-								</ul>
-
-
-							</div>
-
-
-						</div>
-
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div class="section" id="portfolio">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-6 ml-auto mr-auto">
-						<div class="h4 text-center mb-4 title">Portfolio</div>
-						<div class="nav-align-center">
-							<ul class="nav nav-pills nav-pills-primary" role="tablist">
-								<li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#apps"
-										role="tablist"><i class="fa fa-mobile" aria-hidden="true"></i></a></li>
-								<li class="nav-item"><a class="nav-link" data-toggle="tab" href="#videogames"
-										role="tablist"><i class="fa fa-gamepad" aria-hidden="true"></i></a></li>
-
-							</ul>
-						</div>
-					</div>
-				</div>
-				<div class="tab-content gallery mt-5">
-					<div class="tab-pane active" id="apps" role="tabpanel">
-						<div class="ml-auto mr-auto">
-							<div class="row">
-								<div class="col-md-6 rounded-circle">
-									<div class="cc-porfolio-image img-raised" data-aos="fade-up"
-										data-aos-anchor-placement="top-bottom"><a
-											href="https://www.cev.com/proyectos/proyecto-picpoint/">
-											<figure class="cc-effect"><img src="images/picpoint.png" alt="Image" />
-												<figcaption>
-													<div class="h4">PicPoint</div>
-													<p>APP</p>
-												</figcaption>
-											</figure>
-										</a></div>
-								</div>
-							</div>
-							<p class="text-center mt-4"><a href="plantiario/">Plantiario</a> · App iOS · <a
-									href="plantiario/support/">Soporte</a> · <a href="plantiario/privacy/">Privacidad</a></p>
-						</div>
-					</div>
-					<div class="tab-pane" id="videogames">
-						<div class="ml-auto mr-auto">
-							<div class="row">
-								<div class="col-md-6">
-									<div class="cc-porfolio-image img-raised" data-aos="fade-up"
-										data-aos-anchor-placement="top-bottom"><a
-											href="https://davidtejedor.itch.io/falling">
-											<figure class="cc-effect"><img src="images/falling.png" alt="Image" />
-												<figcaption>
-													<div class="h4">Falling!</div>
-													<p>Videojuego Android</p>
-												</figcaption>
-											</figure>
-										</a></div>
-									<div class="cc-porfolio-image img-raised" data-aos="fade-up"
-										data-aos-anchor-placement="top-bottom"><a
-											href="https://globalgamejam.org/2018/games/deep-cave">
-											<figure class="cc-effect"><img src="images/deep-cave.png" alt="Image" />
-												<figcaption>
-													<div class="h4">The Deep Cave</div>
-													<p>Videojuego PC (GameJam 2018)</p>
-												</figcaption>
-											</figure>
-										</a></div>
-								</div>
-								<div class="col-md-6">
-									<div class="cc-porfolio-image img-raised" data-aos="fade-up"
-										data-aos-anchor-placement="top-bottom"><a
-											href="https://gentedelcev.itch.io/insane-maze">
-											<figure class="cc-effect"><img style="object-fit:fill"
-													src="images/insane-maze.png" alt="Image" />
-												<figcaption>
-													<div class="h4">Insane maze
-													</div>
-													<p>Videojuego PC</p>
-												</figcaption>
-											</figure>
-										</a></div>
-
-								</div>
-							</div>
-						</div>
-					</div>
-
-				</div>
-			</div>
-		</div>
-
-		<div class="section" id="experience">
-			<div class="container cc-experience">
-				<div class="h4 text-center mb-4 title">Experiencia laboral</div>
-
-				<div class="card">
-					<div class="row">
-						<div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50"
-							data-aos-duration="500">
-							<div class="card-body cc-experience-header">
-								<p>Octubre 2021 - Actualidad</p>
-								<div class="h5">One2One</div>
-							</div>
-						</div>
-						<div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
-							<div class="card-body">
-								<div class="h5">Desarrollador de aplicaciones móviles</div>
-								<ul>
-									<li>
-										<p>Programación de aplicaciones nativas para dispositivos ios, especializado en SwiftUI en
-											varios
-											proyectos para clientes como Meliá, Grandvalira, ONCE, Athletic Club o Sodexo
-											entre otros.</p>
-									</li>
-									<li>
-										<p>Análisis de requerimientos y funcionalidades, diseño de UX y trato directo
-											con el
-											cliente.</p>
-									</li>
-									<li>
-										<p>Gestión de las betas y publicación de apps para ios en App Store de Apple.
-										</p>
-									</li>
-									<li>
-										<p>Trabajo en equipos reducidos bajo metodología Scrum, en ocasiones coordinando
-											los mismos.</p>
-									</li>
-								</ul>
-
-
-							</div>
-
-
-						</div>
-
-					</div>
-				</div>
-				<div class="card">
-					<div class="row">
-						<div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50"
-							data-aos-duration="500">
-							<div class="card-body cc-experience-header">
-								<p>Septiembre 2021 - Octubre 2021</p>
-								<div class="h5">Proun</div>
-							</div>
-						</div>
-						<div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
-							<div class="card-body">
-								<div class="h5">Desarrollador de aplicaciones móviles</div>
-								<ul>
-									<li>
-										<p>Programación de aplicaciones nativas para
-											dispositivos iOS en Swift.
-											</p>
-									</li>
-									<li>
-										<p>Análisis de requerimientos y funcionalidades.</p>
-									</li>
-									<li>
-										<p>Gestión de las betas y publicación de apps para ios en App Store
-										</p>
-									</li>
-									<li>
-										<p>Mantenimiento de aplicaciones ya desarrolladas en Swift y Objective-C</p>
-									</li>
-								</ul>
-
-
-							</div>
-
-
-						</div>
-
-					</div>
-				</div>
-
-				<div class="card">
-					<div class="row">
-						<div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50"
-							data-aos-duration="500">
-							<div class="card-body cc-experience-header">
-								<p>Abril 2021 - Agosto 2021</p>
-								<div class="h5">Sidertia Solutions</div>
-							</div>
-						</div>
-						<div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
-							<div class="card-body">
-								<div class="h5">Técnico de ciberseguridad en auditorias web</div>
-								<ul>
-									<li>
-										<p>Auditorías en caja negra y gris a aplicaciones web.</p>
-									</li>
-									<li>
-										<p>Uso de técnicas de ciberseguridad avanzadas.</p>
-									</li>
-									<li>
-										<p>Análisis y evaluación de riesgos.</p>
-									</li>
-									<li>
-										<p>Redacción de informes.</p>
-									</li>
-								</ul>
-
-
-							</div>
-
-
-						</div>
-
-					</div>
-				</div>
-				<div class="card">
-					<div class="row">
-						<div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50"
-							data-aos-duration="500">
-							<div class="card-body cc-experience-header">
-								<p>Enero 2019 - Noviembre 2020</p>
-								<div class="h5">Vanadis Iniciative S.L.</div>
-							</div>
-						</div>
-						<div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
-							<div class="card-body">
-								<div class="h5">Desarrollador de aplicaciones móviles</div>
-								<ul>
-									<li>
-										<p>Programación de aplicaciones nativas para dispositivos ios y Android en
-											varios
-											proyectos para clientes como Renault, Taxi, Perfumerías Júlia, OBS o Attends
-											entre
-											otros.</p>
-									</li>
-									<li>
-										<p>Análisis de requerimientos y funcionalidades, diseño de UX y trato directo
-											con el
-											cliente.</p>
-									</li>
-									<li>
-										<p>Gestión de las betas y publicación de apps para ios en App Store de Apple.
-										</p>
-									</li>
-									<li>
-										<p>Trabajo en equipos reducidos bajo metodología Scrum, en ocasiones coordinando
-											los mismos.</p>
-									</li>
-								</ul>
-
-
-							</div>
-
-
-						</div>
-
-					</div>
-				</div>
-				
-			</div>
-		</div>
-		<div class="section" id="formation">
-			<div class="container cc-education">
-				<div class="h4 text-center mb-4 title">Formación</div>
-				<div class="card">
-					<div class="row">
-						<div class="col-md-6" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
-							<div class="card-body text-right">
-								<div class="h3">Titulación</div>
-								<p class="h5">Bootcamp en ciberseguridad</p><br>
-								<strong>The Bridge 2020</strong>
-								<hr class="bg-info">
-								<p class="h5">Técnico superior en desarrollo de aplicaciones multiplataforma
-									<br> (nota media de sobresaliente)
-								</p><br>
-								<strong>CEV - Centro de estudios del vídeo 2017 - 2019</strong>
-								<hr class="bg-info">
-								<p class="h5">High national diploma (HND) in computing and system development</p><br>
-								<strong>CEV - Centro de estudios del vídeo 2017 - 2019</strong>
-
-
-
-							</div>
-							<br>
-						</div>
-
-						<div class="col-md-6" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
-							<div class="card-body text-left">
-								<div class="h3">Formación complementaria</div>
-								<p class="h5">Curso de Adobe Photoshop</p><br>
-								<strong>CEI - Escuela de diseño 2018</strong>
-								<hr class="bg-info">
-								<p class="h5">Curso de programación de videojuegos en Unity</p><br>
-								<strong>Fictizia 2017</strong>
-								<hr class="bg-info">
-								<p class="h5">Curso de modelado en Z-Brush</p><br>
-								<strong>CICE 2019</strong>
-							</div>
-						</div>
-
-					</div>
-
-				</div>
-
-
-			</div>
-		</div>
-
-	</div>
-	<footer id="contact" class="footer" style="background: #F28241; color: white">
-
-		<div class="card-body text-center">
-			<p> <strong>EMAIL: </strong> davidtejedorayet@gmail.com</p>
-			<p> <strong>ZONA: </strong> Madrid, 28029</p>
-			<p><strong>TELÉFONO:</strong> +34 679 59 62 71</p>
-			<p><strong>LINKEDIN:</strong> <a style="color: antiquewhite;"
-					href="https://www.linkedin.com/in/davidtejedorayet/">@davidtejedorayet</a></p>
-
-			<div class="h4 title text-center">David Tejedor Ayet</div>
-			<div class="text-center text-muted">
-			</div>
-
-
-
-		</div>
-	</footer>
-	<script src="js/core/jquery.3.2.1.min.js"></script>
-	<script src="js/core/popper.min.js"></script>
-	<script src="js/core/bootstrap.min.js"></script>
-	<script src="js/now-ui-kit.js?v=1.1.0"></script>
-	<script src="js/aos.js"></script>
-	<script src="scripts/main.js"></script>
+<script type="module" src="/assets/js/site.js"></script>
+<script src="/assets/js/analytics.js" defer></script>
 </body>
-
 </html>
