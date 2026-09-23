@@ -1,0 +1,29 @@
+/* Páginas de privacidad y soporte: lectura cómoda. Requiere site.css antes. */
+.legal__head{padding:120px var(--gutter) 40px;text-align:center;background:radial-gradient(700px circle at 50% 0%,color-mix(in srgb,var(--app) 28%,transparent),transparent 65%)}
+.legal__head img{width:64px;height:64px;border-radius:22.5%;margin:0 auto 16px}
+.legal__head h1{font-size:clamp(2rem,5vw,3.2rem)}
+.legal__head p{color:var(--muted);margin-top:8px}
+.legal__head nav{margin-top:20px;display:flex;gap:8px;justify-content:center;flex-wrap:wrap}
+.legal__layout{max-width:1080px;margin:0 auto;padding:0 var(--gutter) 80px;display:grid;gap:48px}
+@media (min-width:1000px){.legal__layout{grid-template-columns:220px minmax(0,720px)}}
+.legal__toc{font-size:14px}
+@media (min-width:1000px){.legal__toc{position:sticky;top:96px;align-self:start}}
+@media (max-width:999px){.legal__toc{display:none}}
+.legal__toc a{display:block;color:var(--muted);text-decoration:none;padding:6px 0 6px 12px;border-left:2px solid var(--border)}
+.legal__toc a:hover{color:var(--text);border-left-color:var(--app)}
+.legal__body{max-width:720px;font-size:17px;line-height:1.7;color:rgba(244,242,238,.86)}
+.legal__body h2{font-size:clamp(1.6rem,3vw,2rem);margin:0 0 14px}
+.legal__body h2+.legal__meta{margin-top:-8px}
+.legal__body h3{font-size:1.2rem;letter-spacing:-.01em;margin:40px 0 12px;scroll-margin-top:96px}
+.legal__body p,.legal__body ul,.legal__body ol{margin:0 0 16px}
+.legal__body li{margin-bottom:10px}
+.legal__body strong{color:var(--text)}
+.legal__body a{color:color-mix(in srgb,var(--app) 70%,white)}
+.legal__meta{color:var(--faint);font:500 13px/1.4 var(--f-mono);margin-bottom:24px}
+.legal__body details{border:1px solid var(--border);border-radius:var(--radius-sm);padding:14px 18px;margin-bottom:10px;background:var(--surface)}
+.legal__body summary{cursor:pointer;font-weight:500;color:var(--text)}
+.legal__lang{display:contents}
+.legal__body ol{padding-left:22px}
+.legal__body details[open] summary{margin-bottom:10px}
+.legal__body details p:last-child,.legal__body details ol:last-child,.legal__body details ul:last-child{margin-bottom:0}
+.legal__toc p{font:500 12px/1 var(--f-mono);letter-spacing:.14em;text-transform:uppercase;color:var(--faint);margin:0 0 12px}
