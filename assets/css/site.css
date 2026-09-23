@@ -201,3 +201,7 @@ code{font:500 .9em var(--f-mono);background:var(--surface-2);padding:1px 6px;bor
 .fc__rate i.on{background:#00C48C;color:#fff}
 @media (max-width:1000px){.fc-stack{min-height:230px}}
 @media (max-width:720px){.fc-stack{min-height:190px}.fc__rate{display:none}}
+/* ============ Consentimiento ============ */
+.consent{position:fixed;left:50%;bottom:16px;transform:translateX(-50%);z-index:60;width:min(560px,calc(100% - 32px));padding:18px 20px;border-radius:20px;background:rgba(16,16,24,.9);border:1px solid var(--border);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);font-size:14px;color:var(--muted);box-shadow:0 20px 60px rgba(0,0,0,.5)}
+.consent__actions{display:flex;gap:10px;margin-top:12px;flex-wrap:wrap}
+.consent .btn{min-height:40px;padding:0 18px;font-size:14px}
