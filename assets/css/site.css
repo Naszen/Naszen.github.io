@@ -80,7 +80,7 @@ p{margin:0}
 @keyframes float{0%,100%{transform:translate(0,0)}33%{transform:translate(40px,-30px)}66%{transform:translate(-30px,25px)}}
 .hero .eyebrow{display:inline-flex;align-items:center;gap:10px}
 .hero .eyebrow::before{content:"";width:8px;height:8px;border-radius:50%;background:#00C48C;box-shadow:0 0 12px #00C48C}
-.hero__title{font-size:clamp(2.8rem,8vw,6.6rem);max-width:13ch;margin:22px 0 26px;letter-spacing:-.045em;line-height:.98}
+.hero__title{font-size:clamp(2.8rem,8vw,6.6rem);max-width:15ch;text-wrap:balance;margin:22px 0 26px;letter-spacing:-.045em;line-height:.98}
 .js .hero__title .word{display:inline-block;opacity:0;transform:translateY(.45em);filter:blur(10px);transition:opacity .9s var(--ease),transform .9s var(--ease),filter .9s var(--ease);transition-delay:calc(var(--w) * 70ms + 120ms)}
 .js.hero-in .hero__title .word{opacity:1;transform:none;filter:none}
 .hero__title .grad-text .word{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
