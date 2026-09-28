@@ -3,9 +3,11 @@
   const LANGS = ['es', 'en'];
   const valid = l => LANGS.includes(l);
 
-  function resolveLang({ query, stored, nav }) {
+  // fallback 'en' (data-lang-fallback en <html>): inglés salvo navegador en español
+  function resolveLang({ query, stored, nav, fallback }) {
     if (valid(query)) return query;
     if (valid(stored)) return stored;
+    if (fallback === 'en') return /^es\b/i.test(nav || '') ? 'es' : 'en';
     return /^en\b/i.test(nav || '') ? 'en' : 'es';
   }
 
@@ -53,7 +55,8 @@
 
   if (typeof document !== 'undefined') {
     const q = new URLSearchParams(location.search).get('lang');
-    const lang = resolveLang({ query: q, stored: read(), nav: navigator.language });
+    const lang = resolveLang({ query: q, stored: read(), nav: navigator.language,
+      fallback: document.documentElement.getAttribute('data-lang-fallback') });
     if (valid(q)) { if (!store(q)) rewriteLinks(q); }
     apply(lang);
     document.addEventListener('click', e => {

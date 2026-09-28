@@ -46,7 +46,8 @@ El atributo `data-lang` de `<html>` decide cuál se ve. El título y la descripc
 idiomas; `check.mjs` avisa si falta la pareja de algún texto.
 
 El idioma se elige así: `?lang=es|en` en la URL, luego la elección guardada del visitante y luego el idioma del
-navegador (inglés si empieza por `en`; español en cualquier otro caso).
+navegador (inglés si empieza por `en`; español en cualquier otro caso). Con `data-lang-fallback="en"` en `<html>`
+(páginas de Fire Emblem Wiki) es al revés: español si empieza por `es`; inglés en cualquier otro caso.
 
 ## Añadir una app
 

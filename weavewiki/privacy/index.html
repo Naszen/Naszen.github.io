@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<html lang="es" data-lang="es"
-  data-title-es="Weave Wiki · Política de privacidad"
-  data-title-en="Weave Wiki · Privacy Policy"
-  data-desc-es="Política de privacidad de Weave Wiki, app para iPhone de David Tejedor."
-  data-desc-en="Weave Wiki privacy policy, an iPhone app by David Tejedor.">
+<html lang="es" data-lang="es" data-lang-fallback="en"
+  data-title-es="Fire Emblem Wiki · Política de privacidad"
+  data-title-en="Fire Emblem Wiki · Privacy Policy"
+  data-desc-es="Política de privacidad de Fire Emblem Wiki, app para iPhone y iPad de David Tejedor."
+  data-desc-en="Fire Emblem Wiki privacy policy, an iPhone and iPad app by David Tejedor.">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Weave Wiki · Política de privacidad</title>
-<meta name="description" content="Política de privacidad de Weave Wiki, app para iPhone de David Tejedor.">
+<title>Fire Emblem Wiki · Política de privacidad</title>
+<meta name="description" content="Política de privacidad de Fire Emblem Wiki, app para iPhone y iPad de David Tejedor.">
 <meta name="theme-color" content="#0A0A0F">
 <link rel="icon" href="/favicon.ico">
 <link rel="canonical" href="https://naszen.github.io/weavewiki/privacy/">
@@ -19,7 +19,7 @@
 (function(){var d=document.documentElement,l=null;d.classList.add('js');setTimeout(function(){if(!d.classList.contains('site-ready'))d.classList.add('no-anim')},2500);
 try{l=new URLSearchParams(location.search).get('lang')}catch(e){}
 if(l!=='es'&&l!=='en'){try{l=localStorage.getItem('lang')}catch(e){l=null}}
-if(l!=='es'&&l!=='en'){l=/^en\b/i.test(navigator.language||'')?'en':'es'}
+if(l!=='es'&&l!=='en'){l=/^es\b/i.test(navigator.language||'')?'es':'en'}
 d.setAttribute('data-lang',l);d.lang=l;})();
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -45,9 +45,9 @@ d.setAttribute('data-lang',l);d.lang=l;})();
 
 <header class="legal__head">
   <img src="/assets/img/apps/weavewiki-256.png" width="64" height="64" alt="">
-  <h1>Weave Wiki</h1>
+  <h1>Fire Emblem Wiki</h1>
   <p><span data-lang="es">Política de privacidad</span><span data-lang="en">Privacy Policy</span></p>
-  <nav aria-label="Weave Wiki">
+  <nav aria-label="Fire Emblem Wiki">
     <a class="btn" href="/weavewiki/support/"><span data-lang="es">Soporte</span><span data-lang="en">Support</span></a>
   </nav>
 </header>
@@ -66,12 +66,14 @@ d.setAttribute('data-lang',l);d.lang=l;})();
       <a href="#es-cambios-y-contacto">Cambios y contacto</a>
     </nav>
     <article class="legal__body">
-      <h2>Política de privacidad de Weave Wiki</h2>
+      <h2>Política de privacidad de Fire Emblem Wiki</h2>
       <p class="legal__meta">Última actualización: 28 de septiembre de 2026</p>
 
-      <p>Weave Wiki es una guía no oficial, hecha por un fan, para seguir tus partidas de Fire Emblem. <strong>No tiene
+      <p>Fire Emblem Wiki es una guía no oficial, hecha por un fan, para seguir tus partidas de Fire Emblem. <strong>No tiene
       servidores propios, ni cuentas, ni publicidad, ni rastreo.</strong> Lo único que puede recibir el desarrollador son
       estadísticas de uso anónimas, y puedes desactivarlas.</p>
+      <p>La app funciona en iPhone y iPad y está disponible en 9 idiomas: inglés, español, japonés, francés, alemán,
+      italiano, coreano, chino tradicional y chino simplificado. Esta política se ofrece en español y en inglés.</p>
 
       <h3 id="es-donde-estan-tus-datos">Dónde están tus datos</h3>
       <ul>
@@ -90,38 +92,44 @@ d.setAttribute('data-lang',l);d.lang=l;})();
       <p>Para saber qué partes de la app se usan y mejorarlas, la app usa
       <strong>Google Analytics para Firebase</strong>. Está activado por defecto y puedes desactivarlo cuando quieras en
       los ajustes de la app, en «Compartir estadísticas de uso anónimas». Al desactivarlo deja de enviarse
-      cualquier dato.</p>
+      cualquier dato. Al abrir la app no se recoge nada hasta que se aplica tu preferencia.</p>
       <ul>
       <li><strong>Qué se envía:</strong> las pantallas que abres (y, en las fichas, el identificador del personaje u
       objeto del catálogo), el juego elegido, si completas u omites la introducción, la creación de una partida (juego y
       ruta), si sigues un objetivo, el uso de las pruebas gratuitas, cuándo se muestra la pantalla de Pro y si compras
       Pro o invitas a un té (solo el hecho, no el pago).</li>
       <li><strong>Datos técnicos que añade Firebase:</strong> un identificador aleatorio de la instalación, modelo de
-      dispositivo, versión de iOS y de la app, idioma y región aproximada.</li>
+      dispositivo, versión de iOS y de la app, idioma, y país y ubicación aproximada. El país y la ubicación
+      aproximada se deducen de la dirección IP de la conexión; Google no guarda la dirección IP asociada a ti.</li>
       <li><strong>Qué no se envía nunca:</strong> el contenido de tus partidas, tu nombre, tu correo, tu cuenta de Apple
       ni tu ubicación precisa. No se usa el identificador de publicidad (IDFA) ni el identificador del fabricante (IDFV),
       y la personalización de anuncios está desactivada.</li>
-      <li>Estos datos no están vinculados a tu identidad, no se usan para rastrearte ni se venden. Google los trata según
+      <li>Estos datos no están vinculados a tu identidad, no se usan para publicidad ni para rastrearte y no se venden. Google los trata según
       su <a href="https://policies.google.com/privacy">política de privacidad</a>.</li>
       </ul>
 
       <h3 id="es-compras">Compras</h3>
-      <p>Wiki Pro (compra única) y «Invitar a un té» (propina opcional) se compran con el sistema de compras de Apple.
-      Apple gestiona el pago; el desarrollador no recibe tus datos de pago.</p>
+      <ul>
+      <li><strong>Wiki Pro</strong> es una compra única no consumible, no una suscripción. Se puede compartir con En
+      Familia y restaurar en todos tus dispositivos con la misma cuenta de Apple.</li>
+      <li><strong>«Invitar a un té»</strong> es una propina opcional consumible: no desbloquea nada.</li>
+      <li>Las dos se compran con el sistema de compras de Apple. Apple procesa el pago; ni la app ni el desarrollador
+      reciben tus datos de pago.</li>
+      </ul>
 
       <h3 id="es-permisos">Permisos</h3>
       <p>La app no pide acceso a la cámara, las fotos, el micrófono, la ubicación, los contactos ni las
       notificaciones.</p>
 
       <h3 id="es-etiqueta-de-privacidad-en-el-app-store">Etiqueta de privacidad en el App Store</h3>
-      <p>Weave Wiki declara <strong>«Datos no vinculados a ti»</strong>, usados solo para analítica: uso (interacción
-      con el producto), identificadores (ID del dispositivo) y compras (historial de compras). Ninguno se usa para
-      rastrear.</p>
+      <p>Fire Emblem Wiki declara <strong>«Datos no vinculados a ti»</strong>, usados solo para analítica: uso
+      (interacción con el producto), identificadores (identificador del dispositivo), compras (historial de compras) y
+      ubicación (ubicación aproximada). Ninguno está vinculado a tu identidad ni se usa para rastrear.</p>
 
       <h3 id="es-como-borrar-tus-datos">Cómo borrar tus datos</h3>
       <ul>
       <li>Borra una partida en la app: se borra también de tu iCloud y de tus otros dispositivos.</li>
-      <li>Para borrarlo todo, ve a Ajustes › [tu nombre] › iCloud › Gestionar almacenamiento › Weave Wiki. Borrar la app
+      <li>Para borrarlo todo, ve a Ajustes › [tu nombre] › iCloud › Gestionar almacenamiento › Fire Emblem Wiki. Borrar la app
       no borra tus datos de iCloud.</li>
       <li>Para dejar de enviar estadísticas, desactívalas en los ajustes de la app. Como no están vinculadas a tu
       identidad, el desarrollador no puede localizar las tuyas; al borrar la app se descarta el identificador de la
@@ -133,7 +141,7 @@ d.setAttribute('data-lang',l);d.lang=l;})();
 
       <h3 id="es-cambios-y-contacto">Cambios y contacto</h3>
       <p>Los cambios de esta política se publicarán en esta página. Para cualquier duda, escribe a
-      <a href="mailto:naszen013@gmail.com?subject=Weave%20Wiki">naszen013@gmail.com</a> o visita el
+      <a href="mailto:naszen013@gmail.com?subject=Fire%20Emblem%20Wiki">naszen013@gmail.com</a> o visita el
       <a href="/weavewiki/support/">soporte</a>.</p>
     </article>
   </div>
@@ -150,12 +158,14 @@ d.setAttribute('data-lang',l);d.lang=l;})();
       <a href="#en-changes-and-contact">Changes and contact</a>
     </nav>
     <article class="legal__body">
-      <h2>Weave Wiki Privacy Policy</h2>
+      <h2>Fire Emblem Wiki Privacy Policy</h2>
       <p class="legal__meta">Last updated: September 28, 2026</p>
 
-      <p>Weave Wiki is an unofficial, fan-made guide for tracking your Fire Emblem playthroughs. <strong>It has no
+      <p>Fire Emblem Wiki is an unofficial, fan-made guide for tracking your Fire Emblem playthroughs. <strong>It has no
       servers of its own, no accounts, no ads and no tracking.</strong> The only thing the developer may receive is
       anonymous usage statistics, and you can turn them off.</p>
+      <p>The app runs on iPhone and iPad and is available in 9 languages: English, Spanish, Japanese, French, German,
+      Italian, Korean, Traditional Chinese and Simplified Chinese. This policy is offered in Spanish and English.</p>
 
       <h3 id="en-where-your-data-lives">Where your data lives</h3>
       <ul>
@@ -173,36 +183,44 @@ d.setAttribute('data-lang',l);d.lang=l;})();
       <h3 id="en-usage-statistics">Usage statistics</h3>
       <p>To learn which parts of the app are used and improve them, the app uses <strong>Google Analytics for
       Firebase</strong>. It is on by default and you can turn it off at any time in the app's settings, under “Share
-      anonymous usage statistics”. Once off, no data is sent.</p>
+      anonymous usage statistics”. Once off, no data is sent. When the app opens, nothing is collected until your
+      preference has been applied.</p>
       <ul>
       <li><strong>What is sent:</strong> the screens you open (and, on detail pages, the ID of the catalog character or
       item), the game you pick, whether you finish or skip the intro, when you create a playthrough (game and route),
       whether you follow a goal, use of the free tries, when the Pro screen is shown, and whether you buy Pro or a tea
       tip (only the fact, not the payment).</li>
       <li><strong>Technical data added by Firebase:</strong> a random installation ID, device model, iOS and app
-      version, language and approximate region.</li>
+      version, language, and country and approximate location. The country and approximate location are derived from
+      the IP address of the connection; Google does not store the IP address associated with you.</li>
       <li><strong>What is never sent:</strong> the content of your playthroughs, your name, your email, your Apple
       account or your precise location. The advertising identifier (IDFA) and the vendor identifier (IDFV) are not used,
       and ad personalization is turned off.</li>
-      <li>This data is not linked to your identity, is not used to track you and is never sold. Google processes it
+      <li>This data is not linked to your identity, is not used for advertising or to track you, and is never sold. Google processes it
       under its <a href="https://policies.google.com/privacy">privacy policy</a>.</li>
       </ul>
 
       <h3 id="en-purchases">Purchases</h3>
-      <p>Wiki Pro (one-time purchase) and “Buy me a tea” (optional tip) are bought through Apple's in-app purchase
-      system. Apple handles the payment; the developer never receives your payment details.</p>
+      <ul>
+      <li><strong>Wiki Pro</strong> is a one-time, non-consumable purchase, not a subscription. It can be shared with
+      Family Sharing and restored on all your devices with the same Apple account.</li>
+      <li><strong>“Offer a cup of tea”</strong> is an optional consumable tip: it does not unlock anything.</li>
+      <li>Both are bought through Apple's in-app purchase system. Apple processes the payment; neither the app nor the
+      developer receives your payment details.</li>
+      </ul>
 
       <h3 id="en-permissions">Permissions</h3>
       <p>The app does not ask for access to the camera, photos, microphone, location, contacts or notifications.</p>
 
       <h3 id="en-app-store-privacy-label">App Store privacy label</h3>
-      <p>Weave Wiki declares <strong>“Data Not Linked to You”</strong>, used only for analytics: usage data (product
-      interaction), identifiers (device ID) and purchases (purchase history). None of it is used for tracking.</p>
+      <p>Fire Emblem Wiki declares <strong>“Data Not Linked to You”</strong>, used only for analytics: usage data
+      (product interaction), identifiers (device ID), purchases (purchase history) and location (coarse location). None
+      of it is linked to your identity or used for tracking.</p>
 
       <h3 id="en-how-to-delete-your-data">How to delete your data</h3>
       <ul>
       <li>Delete a playthrough in the app: it is also removed from your iCloud and your other devices.</li>
-      <li>To delete everything, go to Settings › [your name] › iCloud › Manage Storage › Weave Wiki. Deleting the app
+      <li>To delete everything, go to Settings › [your name] › iCloud › Manage Storage › Fire Emblem Wiki. Deleting the app
       does not delete your iCloud data.</li>
       <li>To stop sending statistics, turn them off in the app's settings. Because they are not linked to your identity,
       the developer cannot find yours; deleting the app discards the installation ID.</li>
@@ -214,7 +232,7 @@ d.setAttribute('data-lang',l);d.lang=l;})();
 
       <h3 id="en-changes-and-contact">Changes and contact</h3>
       <p>Changes to this policy will be posted on this page. For any question, write to
-      <a href="mailto:naszen013@gmail.com?subject=Weave%20Wiki">naszen013@gmail.com</a> or visit
+      <a href="mailto:naszen013@gmail.com?subject=Fire%20Emblem%20Wiki">naszen013@gmail.com</a> or visit
       <a href="/weavewiki/support/">support</a>.</p>
     </article>
   </div>

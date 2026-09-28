@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<html lang="es" data-lang="es"
-  data-title-es="Weave Wiki · Soporte"
-  data-title-en="Weave Wiki · Support"
-  data-desc-es="Soporte de Weave Wiki, app para iPhone de David Tejedor."
-  data-desc-en="Weave Wiki support, an iPhone app by David Tejedor.">
+<html lang="es" data-lang="es" data-lang-fallback="en"
+  data-title-es="Fire Emblem Wiki · Soporte"
+  data-title-en="Fire Emblem Wiki · Support"
+  data-desc-es="Soporte de Fire Emblem Wiki, app para iPhone y iPad de David Tejedor."
+  data-desc-en="Fire Emblem Wiki support, an iPhone and iPad app by David Tejedor.">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Weave Wiki · Soporte</title>
-<meta name="description" content="Soporte de Weave Wiki, app para iPhone de David Tejedor.">
+<title>Fire Emblem Wiki · Soporte</title>
+<meta name="description" content="Soporte de Fire Emblem Wiki, app para iPhone y iPad de David Tejedor.">
 <meta name="theme-color" content="#0A0A0F">
 <link rel="icon" href="/favicon.ico">
 <link rel="canonical" href="https://naszen.github.io/weavewiki/support/">
@@ -19,7 +19,7 @@
 (function(){var d=document.documentElement,l=null;d.classList.add('js');setTimeout(function(){if(!d.classList.contains('site-ready'))d.classList.add('no-anim')},2500);
 try{l=new URLSearchParams(location.search).get('lang')}catch(e){}
 if(l!=='es'&&l!=='en'){try{l=localStorage.getItem('lang')}catch(e){l=null}}
-if(l!=='es'&&l!=='en'){l=/^en\b/i.test(navigator.language||'')?'en':'es'}
+if(l!=='es'&&l!=='en'){l=/^es\b/i.test(navigator.language||'')?'es':'en'}
 d.setAttribute('data-lang',l);d.lang=l;})();
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -45,9 +45,9 @@ d.setAttribute('data-lang',l);d.lang=l;})();
 
 <header class="legal__head">
   <img src="/assets/img/apps/weavewiki-256.png" width="64" height="64" alt="">
-  <h1>Weave Wiki</h1>
+  <h1>Fire Emblem Wiki</h1>
   <p><span data-lang="es">Soporte</span><span data-lang="en">Support</span></p>
-  <nav aria-label="Weave Wiki">
+  <nav aria-label="Fire Emblem Wiki">
     <a class="btn" href="/weavewiki/privacy/"><span data-lang="es">Privacidad</span><span data-lang="en">Privacy</span></a>
   </nav>
 </header>
@@ -62,14 +62,16 @@ d.setAttribute('data-lang',l);d.lang=l;})();
       <a href="#es-aviso-legal">Aviso legal</a>
     </nav>
     <article class="legal__body">
-      <h2>Soporte de Weave Wiki</h2>
-      <p>Weave Wiki es una guía para iPhone de Fire Emblem Fortune's Weave y Fire Emblem: Three Houses: personajes,
-      objetos, regalos, monturas, calendario y seguimiento de tus partidas. Tus partidas se guardan en tu iPhone y en tu
-      iCloud privado; no hay cuentas ni servidores propios.</p>
+      <h2>Soporte de Fire Emblem Wiki</h2>
+      <p>Fire Emblem Wiki es una guía no oficial para iPhone y iPad de Fire Emblem Fortune's Weave y Fire Emblem: Three
+      Houses: personajes, objetos, regalos, monturas, calendario y seguimiento de tus partidas. Tus partidas se guardan
+      en tu dispositivo y en tu iCloud privado; no hay cuentas ni servidores propios.</p>
+      <p>La app está disponible en 9 idiomas: inglés, español, japonés, francés, alemán, italiano, coreano, chino
+      tradicional y chino simplificado. Esta página se ofrece en español y en inglés.</p>
 
       <h3 id="es-contacto">Contacto</h3>
       <p>¿Tienes una duda, un problema o una sugerencia? Escribe a
-      <a href="mailto:naszen013@gmail.com?subject=Weave%20Wiki">naszen013@gmail.com</a>. Si es un error, indica tu
+      <a href="mailto:naszen013@gmail.com?subject=Fire%20Emblem%20Wiki">naszen013@gmail.com</a>. Si es un error, indica tu
       modelo de iPhone, la versión de iOS y los pasos para reproducirlo.</p>
 
       <h3 id="es-preguntas-frecuentes">Preguntas frecuentes</h3>
@@ -81,21 +83,36 @@ d.setAttribute('data-lang',l);d.lang=l;})();
       </details>
 
       <details>
-      <summary>¿Qué incluye Wiki Pro?</summary>
-      <p>El seguimiento de partidas (reclutados, apoyos, desvíos y frases del Cuervo, sincronizados con iCloud), el
-      planificador semanal y el buscador inverso de regalos. Es una compra única, no una suscripción, y se puede
-      compartir con En Familia. Puedes probar algunas funciones Pro unas cuantas veces gratis.</p>
+      <summary>¿Qué es gratis?</summary>
+      <p>Toda la wiki de Fortune's Weave y de Three Houses, la pantalla Hoy y el seguimiento de 1 partida por juego
+      (reclutados, apoyos y desvíos) hasta el capítulo 7 de la Parte 1 / acto 1. El plan del día, el buscador
+      inverso de regalos y las parejas de entrenamiento de la Arena se pueden probar 5 veces cada uno.</p>
       </details>
 
       <details>
-      <summary>He cambiado de iPhone y no veo Pro</summary>
-      <p>Abre la pantalla de Pro y pulsa «Restaurar compras» con la misma cuenta de Apple con la que compraste. Si la
+      <summary>¿Qué incluye Wiki Pro?</summary>
+      <p>En los dos juegos, Fortune's Weave y Three Houses:</p>
+      <ul>
+      <li>Seguimiento de toda la partida, más allá del capítulo 7, en todas las rutas y casas.</li>
+      <li>Varias partidas a la vez.</li>
+      <li>Plan del día y de la semana sin límite.</li>
+      <li>Buscador inverso de regalos sin límite.</li>
+      <li>Parejas de entrenamiento de la Arena sin límite (solo Fortune's Weave).</li>
+      </ul>
+      <p>Es una compra única no consumible, no una suscripción: se puede compartir con En Familia y restaurar en tus
+      dispositivos. «Invitar a un té» es una propina opcional y no desbloquea nada.</p>
+      </details>
+
+      <details>
+      <summary>¿Cómo restauro mis compras? (He cambiado de dispositivo y no veo Pro)</summary>
+      <p>Pulsa «Restaurar compras» en los ajustes de la app o en la pantalla de Pro, con la misma cuenta de Apple con
+      la que compraste. Si la
       compra está pendiente de aprobación (por ejemplo, con «Pedir la compra»), Pro se activa en cuanto se confirme.</p>
       </details>
 
       <details>
       <summary>¿Cómo se sincronizan mis partidas entre dispositivos?</summary>
-      <p>Weave Wiki usa la base de datos privada de iCloud de tu cuenta de Apple. Inicia sesión con la misma cuenta en
+      <p>Fire Emblem Wiki usa la base de datos privada de iCloud de tu cuenta de Apple. Inicia sesión con la misma cuenta en
       todos tus dispositivos y comprueba que iCloud está activado para la app en Ajustes › [tu nombre] › iCloud. Si
       iCloud no está disponible, las partidas se guardan solo en ese dispositivo y se sincronizan cuando inicias
       sesión.</p>
@@ -109,7 +126,7 @@ d.setAttribute('data-lang',l);d.lang=l;})();
 
       <details>
       <summary>¿Es una app oficial?</summary>
-      <p>No. Es una guía hecha por un fan, sin relación con Nintendo ni con Intelligent Systems.</p>
+      <p>No. Es una guía hecha por un fan, sin relación con Nintendo, Intelligent Systems ni Koei Tecmo.</p>
       </details>
 
       <h3 id="es-privacidad">Privacidad</h3>
@@ -117,8 +134,9 @@ d.setAttribute('data-lang',l);d.lang=l;})();
       <a href="/weavewiki/privacy/">política de privacidad</a>.</p>
 
       <h3 id="es-aviso-legal">Aviso legal</h3>
-      <p>Fire Emblem es una marca de Nintendo. Weave Wiki es una app no oficial y no está afiliada, patrocinada ni
-      aprobada por Nintendo ni por Intelligent Systems.</p>
+      <p>Fire Emblem es una marca de Nintendo. Fire Emblem: Three Houses está desarrollado por Intelligent Systems y Koei
+      Tecmo. Fire Emblem Wiki es una app no oficial para iPhone y iPad y no está afiliada, patrocinada ni aprobada por
+      Nintendo, Intelligent Systems ni Koei Tecmo.</p>
     </article>
   </div>
   <div class="legal__lang" data-lang="en">
@@ -130,14 +148,16 @@ d.setAttribute('data-lang',l);d.lang=l;})();
       <a href="#en-legal-notice">Legal notice</a>
     </nav>
     <article class="legal__body">
-      <h2>Weave Wiki Support</h2>
-      <p>Weave Wiki is an iPhone guide to Fire Emblem Fortune's Weave and Fire Emblem: Three Houses: characters, items,
-      gifts, mounts, calendar and tracking for your playthroughs. Your playthroughs are stored on your iPhone and in your
-      private iCloud; there are no accounts and no servers of its own.</p>
+      <h2>Fire Emblem Wiki Support</h2>
+      <p>Fire Emblem Wiki is an unofficial iPhone and iPad guide to Fire Emblem Fortune's Weave and Fire Emblem: Three
+      Houses: characters, items, gifts, mounts, calendar and tracking for your playthroughs. Your playthroughs are stored
+      on your device and in your private iCloud; there are no accounts and no servers of its own.</p>
+      <p>The app is available in 9 languages: English, Spanish, Japanese, French, German, Italian, Korean, Traditional
+      Chinese and Simplified Chinese. This page is offered in Spanish and English.</p>
 
       <h3 id="en-contact">Contact</h3>
       <p>Got a question, a problem or a suggestion? Write to
-      <a href="mailto:naszen013@gmail.com?subject=Weave%20Wiki">naszen013@gmail.com</a>. For a bug, please include your
+      <a href="mailto:naszen013@gmail.com?subject=Fire%20Emblem%20Wiki">naszen013@gmail.com</a>. For a bug, please include your
       iPhone model, iOS version and the steps to reproduce it.</p>
 
       <h3 id="en-frequently-asked-questions">Frequently asked questions</h3>
@@ -149,21 +169,36 @@ d.setAttribute('data-lang',l);d.lang=l;})();
       </details>
 
       <details>
-      <summary>What does Wiki Pro include?</summary>
-      <p>Playthrough tracking (recruits, supports, detours and Raven lines, synced with iCloud), the weekly planner and
-      the reverse gift finder. It is a one-time purchase, not a subscription, and it can be shared with Family Sharing.
-      You can try some Pro features a few times for free.</p>
+      <summary>What is free?</summary>
+      <p>The whole wiki for Fortune's Weave and Three Houses, the Today screen and tracking for 1 playthrough per game
+      (recruits, supports and paralogues) up to Chapter 7 of Part 1 / Act 1. The day plan, the reverse gift
+      finder and the Arena training pairs can each be tried 5 times.</p>
       </details>
 
       <details>
-      <summary>I switched iPhones and Pro is gone</summary>
-      <p>Open the Pro screen and tap “Restore Purchases” with the same Apple account you bought it with. If the purchase
+      <summary>What does Wiki Pro include?</summary>
+      <p>In both games, Fortune's Weave and Three Houses:</p>
+      <ul>
+      <li>Tracking for your whole playthrough, beyond Chapter 7, on every route and house.</li>
+      <li>Multiple playthroughs at once.</li>
+      <li>Unlimited day and week plans.</li>
+      <li>Unlimited reverse gift finder.</li>
+      <li>Unlimited Arena training pairs (Fortune's Weave only).</li>
+      </ul>
+      <p>It is a one-time, non-consumable purchase, not a subscription: it can be shared with Family Sharing and restored
+      on your devices. “Offer a cup of tea” is an optional tip and does not unlock anything.</p>
+      </details>
+
+      <details>
+      <summary>How do I restore my purchases? (I switched devices and Pro is gone)</summary>
+      <p>Tap “Restore purchases” in the app's settings or on the Pro screen, with the same Apple account you bought it
+      with. If the purchase
       is awaiting approval (for example, with Ask to Buy), Pro turns on as soon as it is confirmed.</p>
       </details>
 
       <details>
       <summary>How are my playthroughs synced across devices?</summary>
-      <p>Weave Wiki uses the private iCloud database of your Apple account. Sign in with the same account on all your
+      <p>Fire Emblem Wiki uses the private iCloud database of your Apple account. Sign in with the same account on all your
       devices and check that iCloud is turned on for the app in Settings › [your name] › iCloud. If iCloud is
       unavailable, playthroughs are stored on that device only and sync once you sign in.</p>
       </details>
@@ -175,7 +210,7 @@ d.setAttribute('data-lang',l);d.lang=l;})();
 
       <details>
       <summary>Is this an official app?</summary>
-      <p>No. It is a fan-made guide, not affiliated with Nintendo or Intelligent Systems.</p>
+      <p>No. It is a fan-made guide, not affiliated with Nintendo, Intelligent Systems or Koei Tecmo.</p>
       </details>
 
       <h3 id="en-privacy">Privacy</h3>
@@ -183,8 +218,9 @@ d.setAttribute('data-lang',l);d.lang=l;})();
       <a href="/weavewiki/privacy/">privacy policy</a>.</p>
 
       <h3 id="en-legal-notice">Legal notice</h3>
-      <p>Fire Emblem is a trademark of Nintendo. Weave Wiki is an unofficial app and is not affiliated with, sponsored
-      by or endorsed by Nintendo or Intelligent Systems.</p>
+      <p>Fire Emblem is a trademark of Nintendo. Fire Emblem: Three Houses is developed by Intelligent Systems and Koei
+      Tecmo. Fire Emblem Wiki is an unofficial iPhone and iPad app and is not affiliated with, sponsored by or endorsed
+      by Nintendo, Intelligent Systems or Koei Tecmo.</p>
     </article>
   </div>
 </main>
