@@ -61,6 +61,7 @@ d.setAttribute('data-lang',l);d.lang=l;})();
       <a href="#es-que-datos-se-guardan-y-donde">Qué datos se guardan y dónde</a>
       <a href="#es-para-que-se-usan">Para qué se usan</a>
       <a href="#es-servicios-de-terceros">Servicios de terceros</a>
+      <a href="#es-nido">El Nido (espacio compartido)</a>
       <a href="#es-permisos">Permisos</a>
       <a href="#es-widgets">Widgets</a>
       <a href="#es-etiqueta-de-privacidad-en-el-app-store">Etiqueta de privacidad en el App Store</a>
@@ -71,7 +72,7 @@ d.setAttribute('data-lang',l);d.lang=l;})();
     </nav>
     <article class="legal__body">
       <h2>Política de privacidad de Keppi</h2>
-      <p class="legal__meta">Última actualización: 23 de septiembre de 2026</p>
+      <p class="legal__meta">Última actualización: 3 de octubre de 2026</p>
 
       <p>Keppi es una app de listas y notas. Necesita una cuenta para sincronizar tus listas entre dispositivos.
       <strong>Guardamos lo mínimo para que funcione y nada más: sin publicidad, sin analítica de terceros y sin
@@ -87,37 +88,59 @@ d.setAttribute('data-lang',l);d.lang=l;})();
       nombre. Con Google pedimos los permisos básicos <em>openid, email y profile</em>; Google puede compartir tu nombre
       y tu foto de perfil, pero Keppi no los usa. Se guardan tu email, un identificador de usuario y los datos técnicos de sesión que registra el sistema de autenticación (como la fecha del último acceso).</li>
       <li><strong>Tu contenido.</strong> Listas, notas, elementos y su estado, la apariencia de cada lista, tu mascota,
-      tu experiencia y las fotos que eliges como fondo de una lista.</li>
+      tu experiencia, tus recuerdos y las fotos que añades a una lista o a un elemento.</li>
       <li><strong>Servidor.</strong> Todo lo anterior se guarda en <strong>Supabase</strong>, en servidores de la Unión
       Europea (Fráncfort, Alemania). Supabase actúa como encargado del tratamiento. Cada espacio está protegido con
-      reglas de acceso para que solo sus miembros puedan ver su contenido. Las fotos de fondo se guardan en un
-      almacenamiento privado, en JPEG y reducidas a 1600 px como máximo.</li>
+      reglas de acceso para que solo sus miembros puedan ver su contenido. Las fotos se guardan en un
+      almacenamiento privado, reducidas y comprimidas (HEIC, 1 MiB como máximo por foto).</li>
+      <li><strong>Avisos push.</strong> Si estás en un Nido, guardamos el identificador de notificaciones (token de APNs)
+      de tu dispositivo para avisarte de lo que hace la otra persona. El aviso puede llevar el título de la lista y el
+      texto del elemento, y viaja por el servicio de notificaciones de Apple.</li>
       <li><strong>En tu dispositivo.</strong> Una copia local de tus listas para que la app funcione sin conexión, y la
       sesión en el Llavero de ese dispositivo.</li>
       </ul>
 
       <h3 id="es-para-que-se-usan">Para qué se usan</h3>
-      <p>Solo para que la app funcione: identificarte, sincronizar tu contenido entre tus dispositivos y, más adelante,
-      compartirlo con quien tú invites. La base legal es la ejecución del servicio que solicitas al crear la
+      <p>Solo para que la app funcione: identificarte, sincronizar tu contenido entre tus dispositivos y compartirlo con
+      quien tú invites a tu Nido. La base legal es la ejecución del servicio que solicitas al crear la
       cuenta.</p>
 
       <h3 id="es-servicios-de-terceros">Servicios de terceros</h3>
       <ul>
       <li><strong>Supabase</strong> (alojamiento de la base de datos, autenticación y almacenamiento, en la UE).</li>
       <li><strong>Apple</strong> y <strong>Google</strong>, solo para el inicio de sesión que tú elijas.</li>
+      <li><strong>Apple Push Notification service</strong>, para los avisos del Nido.</li>
       </ul>
+      <p><strong>Vistas previas de enlaces.</strong> Si un elemento lleva un enlace, tu dispositivo descarga la vista
+      previa (título e imagen) directamente de esa web, que puede ver tu dirección IP como en cualquier visita. Con
+      los enlaces que escribe otra persona del Nido, la vista previa solo se descarga si la tocas.</p>
       <p>No hay SDK de analítica, publicidad ni informes de errores de terceros.</p>
 
-      <h3 id="es-permisos">Permisos</h3>
+      <h3 id="es-nido">El Nido (espacio compartido)</h3>
       <ul>
-      <li><strong>Notificaciones:</strong> recordatorios locales de tus listas, programados en el propio
-      dispositivo.</li>
-      <li><strong>Fotos:</strong> no se pide acceso a tu fototeca. Las fotos de fondo se eligen con el selector del
-      sistema, que solo entrega a la app la foto que escoges.</li>
+      <li>Lo que pones en un Nido lo ve y lo edita la otra persona, junto con tu nombre visible y tu avatar.</li>
+      <li>Para menores, la app pide al sistema el rango de edad al empezar a vincular y, si hace falta, espera la
+      aprobación de la familia. Esa comprobación ocurre en el dispositivo: tu edad no se envía a nuestro servidor.</li>
+      <li>Si reportas algo, guardamos una copia del contenido reportado y el motivo para poder revisarlo. Esos reportes
+      no se borran con tu cuenta; puedes pedir su borrado escribiendo a
+      <a href="mailto:naszen013@gmail.com?subject=Keppi">naszen013@gmail.com</a>.</li>
+      </ul>
+
+      <h3 id="es-permisos">Permisos</h3>
+      <p>Todos se piden en el momento en que los necesitas, nunca al abrir la app.</p>
+      <ul>
+      <li><strong>Notificaciones:</strong> recordatorios de tus listas, programados en el propio dispositivo, y avisos
+      del Nido.</li>
+      <li><strong>Fotos:</strong> no se pide acceso a tu fototeca. Las fotos se eligen con el selector del sistema, que
+      solo entrega a la app la foto que escoges.</li>
+      <li><strong>Cámara:</strong> solo cuando decides hacer una foto para una nota, una lista o un elemento.</li>
+      <li><strong>Recordatorios:</strong> solo cuando decides importar tus listas de Recordatorios; se leen en el
+      dispositivo para traerlas a Keppi.</li>
       </ul>
 
       <h3 id="es-widgets">Widgets</h3>
-      <p>Los widgets leen tus listas de la copia local del dispositivo y pueden marcar elementos como hechos.</p>
+      <p>Los widgets leen tus listas de la copia local del dispositivo y pueden marcar elementos como hechos. En la
+      pantalla bloqueada, el contenido de las listas se oculta hasta que desbloqueas.</p>
 
       <h3 id="es-etiqueta-de-privacidad-en-el-app-store">Etiqueta de privacidad en el App Store</h3>
       <p>Keppi declara: <strong>email, ID de usuario, fotos y otro contenido del usuario</strong>, usados para la
@@ -125,8 +148,9 @@ d.setAttribute('data-lang',l);d.lang=l;})();
 
       <h3 id="es-como-borrar-tus-datos">Cómo borrar tus datos</h3>
       <ul>
-      <li>Desde la app: Perfil › Eliminar cuenta. Se borran tus fotos, los espacios en los que eres el único miembro con
-      todo su contenido, y tu cuenta. Si entraste con Apple, además se revoca el acceso de Keppi a tu Apple ID.</li>
+      <li>Desde la app: Perfil › Cuenta › Borrar mi cuenta. Se borran tus fotos, los espacios en los que eres el único miembro con
+      todo su contenido, tus identificadores de notificaciones y tu cuenta. Si tenías un Nido, se cierra: la otra
+      persona conserva su copia durante el periodo de gracia y después se borra. Si entraste con Apple, además se revoca el acceso de Keppi a tu Apple ID.</li>
       <li>Al cerrar sesión se borra la copia local si no hay cambios pendientes de subir.</li>
       <li>También puedes pedir el borrado o una copia de tus datos escribiendo a
       <a href="mailto:naszen013@gmail.com?subject=Keppi">naszen013@gmail.com</a>.</li>
@@ -154,6 +178,7 @@ d.setAttribute('data-lang',l);d.lang=l;})();
       <a href="#en-what-data-is-stored-and-where">What data is stored, and where</a>
       <a href="#en-what-it-s-used-for">What it's used for</a>
       <a href="#en-third-party-services">Third-party services</a>
+      <a href="#en-nest">The Nest (shared space)</a>
       <a href="#en-permissions">Permissions</a>
       <a href="#en-widgets">Widgets</a>
       <a href="#en-app-store-privacy-label">App Store privacy label</a>
@@ -164,7 +189,7 @@ d.setAttribute('data-lang',l);d.lang=l;})();
     </nav>
     <article class="legal__body">
       <h2>Keppi Privacy Policy</h2>
-      <p class="legal__meta">Last updated: September 23, 2026</p>
+      <p class="legal__meta">Last updated: October 3, 2026</p>
 
       <p>Keppi is a lists and notes app. It needs an account to sync your lists across devices. <strong>We store the
       bare minimum to make it work and nothing more: no ads, no third-party analytics and no tracking.</strong> We
@@ -179,36 +204,60 @@ d.setAttribute('data-lang',l);d.lang=l;})();
       <li><strong>Your account.</strong> You sign in with Apple or Google. With Apple we only ask for your email, never
       your name. With Google we request the basic <em>openid, email and profile</em> scopes; Google may share your name
       and profile picture, but Keppi does not use them. Your email, a user identifier and the technical session data the authentication system records (such as your last sign-in date) are stored.</li>
-      <li><strong>Your content.</strong> Lists, notes, items and their state, each list's appearance, your pet, your XP
-      and the photos you choose as a list background.</li>
+      <li><strong>Your content.</strong> Lists, notes, items and their state, each list's appearance, your pet, your XP,
+      your memories and the photos you add to a list or an item.</li>
       <li><strong>Server.</strong> All of the above is stored with <strong>Supabase</strong>, on servers in the European
       Union (Frankfurt, Germany). Supabase acts as data processor. Each space is protected by access rules so only its
-      members can see its content. Background photos are kept in private storage, as JPEG, downsized to 1600 px at
-      most.</li>
+      members can see its content. Photos are kept in private storage, downsized and compressed (HEIC, 1 MiB at most per
+      photo).</li>
+      <li><strong>Push notifications.</strong> If you are in a Nest, we store your device's notification identifier
+      (APNs token) to let you know what the other person does. The notification may include the list title and the
+      item text, and it travels through Apple's notification service.</li>
       <li><strong>On your device.</strong> A local copy of your lists so the app works offline, and your session in that
       device's Keychain.</li>
       </ul>
 
       <h3 id="en-what-it-s-used-for">What it's used for</h3>
-      <p>Only to make the app work: to identify you, sync your content across your devices and, later on, share it with
-      the people you invite. The legal basis is performing the service you request when you create the account.</p>
+      <p>Only to make the app work: to identify you, sync your content across your devices and share it with the person
+      you invite to your Nest. The legal basis is performing the service you request when you create the account.</p>
 
       <h3 id="en-third-party-services">Third-party services</h3>
       <ul>
       <li><strong>Supabase</strong> (database hosting, authentication and storage, in the EU).</li>
       <li><strong>Apple</strong> and <strong>Google</strong>, only for the sign-in you choose.</li>
+      <li><strong>Apple Push Notification service</strong>, for Nest notifications.</li>
       </ul>
+      <p><strong>Link previews.</strong> If an item contains a link, your device downloads the preview (title and
+      image) straight from that website, which can see your IP address as with any visit. For links written by the
+      other person in a Nest, the preview is only downloaded when you tap it.</p>
       <p>There are no third-party analytics, advertising or crash-reporting SDKs.</p>
 
-      <h3 id="en-permissions">Permissions</h3>
+      <h3 id="en-nest">The Nest (shared space)</h3>
       <ul>
-      <li><strong>Notifications:</strong> local reminders for your lists, scheduled on the device itself.</li>
-      <li><strong>Photos:</strong> no access to your photo library is requested. Background photos are picked with the
-      system picker, which only hands the app the photo you choose.</li>
+      <li>What you put in a Nest can be seen and edited by the other person, together with your display name and
+      avatar.</li>
+      <li>For children, the app asks the system for an age range when linking starts and, if needed, waits for family
+      approval. This check happens on the device: your age is not sent to our server.</li>
+      <li>If you report something, we keep a copy of the reported content and the reason so it can be reviewed. Those
+      reports are not deleted with your account; you can ask for their deletion by writing to
+      <a href="mailto:naszen013@gmail.com?subject=Keppi">naszen013@gmail.com</a>.</li>
+      </ul>
+
+      <h3 id="en-permissions">Permissions</h3>
+      <p>Each one is requested when you need it, never when you open the app.</p>
+      <ul>
+      <li><strong>Notifications:</strong> reminders for your lists, scheduled on the device itself, and Nest
+      notifications.</li>
+      <li><strong>Photos:</strong> no access to your photo library is requested. Photos are picked with the system
+      picker, which only hands the app the photo you choose.</li>
+      <li><strong>Camera:</strong> only when you decide to take a photo for a note, a list or an item.</li>
+      <li><strong>Reminders:</strong> only when you decide to import your Reminders lists; they are read on the device
+      to bring them into Keppi.</li>
       </ul>
 
       <h3 id="en-widgets">Widgets</h3>
-      <p>Widgets read your lists from the device's local copy and can mark items as done.</p>
+      <p>Widgets read your lists from the device's local copy and can mark items as done. On the Lock Screen, list
+      contents stay hidden until you unlock.</p>
 
       <h3 id="en-app-store-privacy-label">App Store privacy label</h3>
       <p>Keppi declares: <strong>email, user ID, photos and other user content</strong>, used for app functionality,
@@ -216,8 +265,9 @@ d.setAttribute('data-lang',l);d.lang=l;})();
 
       <h3 id="en-how-to-delete-your-data">How to delete your data</h3>
       <ul>
-      <li>In the app: Profile › Delete account. This deletes your photos, the spaces where you are the only member with
-      all their content, and your account. If you signed in with Apple, Keppi's access to your Apple ID is also
+      <li>In the app: Profile › Account › Delete my account. This deletes your photos, the spaces where you are the only member with
+      all their content, your notification identifiers and your account. If you had a Nest, it is closed: the other
+      person keeps their copy during the grace period, and then it is deleted. If you signed in with Apple, Keppi's access to your Apple ID is also
       revoked.</li>
       <li>Signing out deletes the local copy if there are no changes waiting to upload.</li>
       <li>You can also request deletion or a copy of your data by writing to
