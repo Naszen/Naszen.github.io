@@ -2,13 +2,13 @@
 <html lang="es" data-lang="es"
   data-title-es="CookTribe · Política de privacidad"
   data-title-en="CookTribe · Privacy Policy"
-  data-desc-es="Política de privacidad de CookTribe, app para iPhone de David Tejedor."
-  data-desc-en="CookTribe privacy policy, an iPhone app by David Tejedor.">
+  data-desc-es="Política de privacidad de CookTribe, app para iPhone, iPad y Mac de David Tejedor."
+  data-desc-en="CookTribe privacy policy, an iPhone, iPad and Mac app by David Tejedor.">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>CookTribe · Política de privacidad</title>
-<meta name="description" content="Política de privacidad de CookTribe, app para iPhone de David Tejedor.">
+<meta name="description" content="Política de privacidad de CookTribe, app para iPhone, iPad y Mac de David Tejedor.">
 <meta name="theme-color" content="#0A0A0F">
 <link rel="icon" href="/favicon.ico">
 <link rel="canonical" href="https://naszen.github.io/cooktribe/privacy/">
@@ -59,13 +59,15 @@ d.setAttribute('data-lang',l);d.lang=l;})();
       <p>En esta página</p>
       <a href="#es-responsable">Responsable</a>
       <a href="#es-que-datos-se-guardan-y-donde">Qué datos se guardan y dónde</a>
+      <a href="#es-lo-que-no-sale-de-tu-dispositivo">Lo que no sale de tu dispositivo</a>
       <a href="#es-quien-ve-tus-datos">Quién ve tus datos</a>
       <a href="#es-para-que-se-usan">Para qué se usan</a>
+      <a href="#es-avisos">Avisos</a>
       <a href="#es-servicios-de-terceros">Servicios de terceros</a>
-      <a href="#es-exportar-la-lista-de-la-compra">Exportar la lista de la compra</a>
+      <a href="#es-exportar-recetas-y-la-lista-de-la-compra">Exportar recetas y la lista de la compra</a>
       <a href="#es-permisos">Permisos</a>
-      <a href="#es-funciones-que-llegaran">Funciones que llegarán</a>
       <a href="#es-etiqueta-de-privacidad-en-el-app-store">Etiqueta de privacidad en el App Store</a>
+      <a href="#es-cuanto-tiempo-se-guardan">Cuánto tiempo se guardan</a>
       <a href="#es-como-borrar-tus-datos">Cómo borrar tus datos</a>
       <a href="#es-tus-derechos">Tus derechos</a>
       <a href="#es-menores">Menores</a>
@@ -73,12 +75,12 @@ d.setAttribute('data-lang',l);d.lang=l;})();
     </nav>
     <article class="legal__body">
       <h2>Política de privacidad de CookTribe</h2>
-      <p class="legal__meta">Última actualización: 30 de septiembre de 2026</p>
+      <p class="legal__meta">Última actualización: 7 de octubre de 2026</p>
 
-      <p>CookTribe es un recetario para organizar recetas, planificar comidas y hacer la lista de la compra, solo o con
-      tu tribu. Necesita una cuenta para guardar tus recetas en todos tus dispositivos y compartirlas con quien tú
-      elijas. <strong>Guardamos lo mínimo para que funcione y nada más: sin publicidad, sin analítica y sin
-      rastreo.</strong> Nunca vendemos ni compartimos tus datos con fines comerciales.</p>
+      <p>CookTribe es un recetario para iPhone, iPad y Mac para guardar recetas, planificar comidas y hacer la lista de
+      la compra, solo o con tu tribu. Necesita una cuenta para tener tus recetas en todos tus dispositivos y
+      compartirlas con tus tribus. <strong>Guardamos lo mínimo para que funcione y nada más: sin publicidad, sin
+      analítica y sin rastreo.</strong> Nunca vendemos ni compartimos tus datos con fines comerciales.</p>
 
       <h3 id="es-responsable">Responsable</h3>
       <p>David Tejedor Ayet, desarrollador de CookTribe. Contacto:
@@ -88,91 +90,143 @@ d.setAttribute('data-lang',l);d.lang=l;})();
       <ul>
       <li><strong>Tu cuenta.</strong> Inicias sesión con Apple o con Google; no hay registro con email y contraseña.
       Con Apple solo pedimos tu email, nunca tu nombre, y puedes usar la opción de ocultarlo. Con Google pedimos los
-      permisos básicos <em>openid, email y profile</em>, y se guardan el nombre y la foto de perfil que comparte
-      Google. Se guardan tu email, un identificador de usuario, tu nombre visible (si lo hay) y los datos técnicos de
-      sesión que registra el sistema de autenticación (como la fecha del último acceso).</li>
-      <li><strong>Tu contenido.</strong> Recetarios, recetas (con sus ingredientes, pasos, notas, etiquetas y URL de
-      origen), fotos de recetas y pasos, listas de la compra, plan semanal, favoritos, tus tribus y sus miembros con su
-      rol, y las recetas que otras personas te han compartido.</li>
+      permisos básicos <em>openid, email y profile</em>. Se guardan tu email, un identificador de usuario, la dirección
+      de la foto de perfil que comparta el proveedor (si la hay) y los datos técnicos de sesión que registra el sistema
+      de autenticación (como la fecha del último acceso).</li>
+      <li><strong>Tu alias.</strong> Al entrar eliges el nombre con el que te verán los demás; no se copia el nombre de
+      tu cuenta de Apple o Google. Puedes cambiarlo cuando quieras desde tu cuenta.</li>
+      <li><strong>Tu contenido.</strong> Recetarios y recetas (con sus ingredientes, pasos, notas, etiquetas,
+      categoría y URL de origen), fotos de recetas y pasos, las recetas de otros que has guardado, favoritos, tus
+      listas de la compra y planes semanales, y tus tribus con sus miembros, roles e invitaciones.</li>
+      <li><strong>Avisos.</strong> Si activas las notificaciones, el identificador de notificaciones de Apple de cada
+      dispositivo, su entorno y su idioma, y en qué tribus quieres recibir avisos.</li>
       <li><strong>Servidor.</strong> Todo lo anterior se guarda en <strong>Supabase</strong>, en servidores de la Unión
-      Europea (Fráncfort, Alemania), y viaja cifrado. Supabase actúa como encargado del tratamiento. Cada espacio está
-      protegido con reglas de acceso para que solo sus miembros puedan ver su contenido. Las fotos se guardan en un
-      almacenamiento privado, en JPEG, reducidas a 2048 px como máximo y sin ubicación ni metadatos EXIF.</li>
+      Europea (Fráncfort, Alemania), y viaja cifrado. Supabase actúa como encargado del tratamiento. Reglas de acceso en
+      el servidor hacen que cada persona solo pueda leer lo que le corresponde (ver «Quién ve tus datos»). Las fotos se
+      guardan en un almacenamiento privado, en JPEG, reducidas a 2048 px como máximo y sin ubicación ni metadatos EXIF:
+      la app las vuelve a codificar en tu dispositivo antes de subirlas.</li>
       <li><strong>En tu dispositivo.</strong> Una copia local de tus datos para que la app funcione sin conexión (tus
       cambios se suben cuando vuelve la red), los borradores de recetas que aún no has guardado y la sesión en el
       Llavero de ese dispositivo.</li>
       </ul>
 
+      <h3 id="es-lo-que-no-sale-de-tu-dispositivo">Lo que no sale de tu dispositivo</h3>
+      <ul>
+      <li><strong>Escanear o fotografiar una receta:</strong> el texto se lee con el reconocimiento de texto de Apple
+      (Vision) en tu dispositivo. Solo se guarda la foto que decidas adjuntar a la receta; las demás páginas
+      escaneadas se descartan.</li>
+      <li><strong>Pegar un texto o importar desde una web:</strong> la receta se estructura en tu dispositivo, con
+      Apple Intelligence si tu dispositivo lo admite o, si no, con reglas propias de la app. Ningún texto se envía a
+      servicios de inteligencia artificial externos.</li>
+      <li><strong>Importar desde una web:</strong> es tu dispositivo el que descarga la página (y su foto principal)
+      directamente desde esa web, igual que un navegador; CookTribe no pasa por ningún servidor intermedio. La web
+      visitada puede registrar esa visita como cualquier otra.</li>
+      <li><strong>Temporizadores, widget, Spotlight y Handoff:</strong> los temporizadores del modo cocina, el widget
+      de la lista de la compra, la búsqueda de tus recetas en Spotlight y Handoff funcionan con las funciones del
+      sistema, en tus dispositivos.</li>
+      <li><strong>Exportar mis recetas a PDF:</strong> el documento se genera en tu dispositivo.</li>
+      </ul>
+
       <h3 id="es-quien-ve-tus-datos">Quién ve tus datos</h3>
       <ul>
-      <li><strong>Tu espacio personal</strong> solo lo ves tú.</li>
-      <li><strong>Una tribu</strong> la ven sus miembros: los editores pueden añadir y cambiar contenido, y los lectores
-      solo verlo. Los miembros ven también tu nombre visible, nunca tu email. Las invitaciones son enlaces de un solo
-      uso que caducan a los 7 días; el servidor solo guarda una huella del enlace, no el enlace.</li>
+      <li><strong>Tus recetas y recetarios</strong> los ven tú y los miembros de todas tus tribus. No hay recetas
+      privadas: si no estás en ninguna tribu ni compartes una receta por enlace, solo la ves tú. Solo tú puedes
+      editarlas.</li>
+      <li><strong>Las recetas que guardan otros.</strong> Si alguien guarda una receta tuya, la siguen viendo, en solo
+      lectura, esa persona y los miembros de sus tribus, aunque dejéis de compartir tribu. Si borras la receta, quien
+      la había guardado se queda con una copia suya.</li>
+      <li><strong>Tu lista de la compra y tu plan personales</strong> solo los ves tú.</li>
+      <li><strong>La lista de la compra y el plan de una tribu</strong> los ven sus miembros: los editores pueden
+      cambiarlos y los lectores solo verlos.</li>
+      <li><strong>Tu alias</strong> lo ven los miembros de tus tribus, quien recibe una invitación tuya y quien ve una
+      receta tuya, igual que el enlace a la foto de perfil del proveedor si lo hay. Tu email nunca se muestra a otras
+      personas.</li>
+      <li><strong>Invitaciones.</strong> Se envían como enlace y caducan; el servidor solo guarda una huella del
+      enlace, no el enlace.</li>
       <li><strong>Una receta compartida por enlace</strong> la puede ver, en vivo y en solo lectura, quien tenga el
-      enlace y una cuenta de CookTribe, junto con tu nombre visible, hasta que revoques el enlace o borres la receta.
-      Quien la haya añadido puede guardar una copia propia, y si dejas de compartirla o la borras, conserva una copia.</li>
+      enlace y una cuenta de CookTribe, junto con tu alias, y añadirla a sus recetarios. Si dejas de compartirla, el
+      enlace deja de funcionar para quien no la había añadido; quien ya la tenía la conserva.</li>
       </ul>
 
       <h3 id="es-para-que-se-usan">Para qué se usan</h3>
-      <p>Solo para que la app funcione: identificarte, sincronizar tu contenido entre tus dispositivos y compartirlo con
-      las tribus y personas que tú elijas. La base legal es la ejecución del servicio que solicitas al crear la
-      cuenta.</p>
+      <p>Solo para que la app funcione: identificarte, sincronizar tu contenido entre tus dispositivos, compartirlo con
+      tus tribus y avisarte de recetas nuevas si lo pides. La base legal es la ejecución del servicio que solicitas al
+      crear la cuenta.</p>
+
+      <h3 id="es-avisos">Avisos</h3>
+      <p>CookTribe te pregunta si quieres avisos al crear una tribu o unirte a ella, y puedes desactivarlos por tribu
+      en la pestaña Tribu. Cuando un miembro crea o guarda una receta, el servidor envía el aviso a través del servicio
+      de notificaciones de Apple (APNs) con el alias de esa persona, el título de la receta y el nombre de la tribu. Al
+      cerrar sesión o borrar la cuenta, el dispositivo se da de baja.</p>
 
       <h3 id="es-servicios-de-terceros">Servicios de terceros</h3>
       <ul>
-      <li><strong>Supabase</strong> (alojamiento de la base de datos, autenticación y almacenamiento de fotos, en la
-      UE).</li>
+      <li><strong>Supabase</strong> (base de datos, autenticación y almacenamiento de fotos, en la UE).</li>
       <li><strong>Apple</strong> y <strong>Google</strong>, solo para el inicio de sesión que tú elijas.</li>
-      <li><strong>Cloudflare</strong>, que sirve las páginas de los enlaces de invitación (<code>/i/</code>) y de receta
-      compartida (<code>/s/</code>) y la exportación a Bring!. Ese servicio no guarda nada ni escribe registros de
-      peticiones, y las páginas de los enlaces no contienen datos de la tribu ni de la receta: solo sirven para abrir
-      la app o descargarla.</li>
+      <li><strong>Apple (APNs)</strong>, para entregar los avisos si los activas.</li>
+      <li><strong>Cloudflare</strong>, que sirve las páginas de los enlaces de invitación y de receta compartida y la
+      exportación a Bring!. Ese servicio no guarda nada ni escribe registros de peticiones, y las páginas de los
+      enlaces no contienen datos de la tribu ni de la receta: solo sirven para abrir la app o descargarla.</li>
       </ul>
       <p>No hay SDK de analítica, publicidad ni informes de errores de terceros.</p>
 
-      <h3 id="es-exportar-la-lista-de-la-compra">Exportar la lista de la compra</h3>
+      <h3 id="es-exportar-recetas-y-la-lista-de-la-compra">Exportar recetas y la lista de la compra</h3>
       <p>Tus datos solo salen hacia otras apps cuando tú lo pides:</p>
       <ul>
       <li><strong>Bring!:</strong> el nombre de la receta o de la lista, las raciones y cada ingrediente con su cantidad
       viajan dentro de un enlace que Bring! abre a través de Cloudflare. Nunca se envían las notas de los ingredientes
-      ni ningún identificador de tu cuenta, tu tribu o tu dispositivo. Pueden verlo Cloudflare (procesa la petición),
-      Bring! y quien tenga ese enlace.</li>
+      ni ningún identificador de tu cuenta, tu tribu o tu dispositivo. Pueden verlo Cloudflare (procesa la petición,
+      sin guardarla), Bring! y quien tenga ese enlace.</li>
       <li><strong>Recordatorios:</strong> los ingredientes se añaden a la lista de Recordatorios que elijas, en tu
       dispositivo.</li>
+      <li><strong>Keppi:</strong> los productos se entregan directamente a la app Keppi en tu dispositivo.</li>
       <li><strong>Google Keep y otras apps:</strong> por la hoja de compartir del sistema, que entrega el texto a la app
       que tú escojas.</li>
       </ul>
 
       <h3 id="es-permisos">Permisos</h3>
       <ul>
-      <li><strong>Cámara:</strong> solo cuando eliges hacer una foto de una receta.</li>
+      <li><strong>Cámara</strong> (iPhone y iPad): solo cuando eliges hacer una foto o escanear una receta. En Mac no
+      se usa la cámara: eliges fotos o archivos, o los arrastras.</li>
       <li><strong>Fotos:</strong> no se pide acceso a tu fototeca; las fotos se eligen con el selector del sistema, que
       solo entrega a la app la foto que escoges.</li>
       <li><strong>Recordatorios:</strong> solo cuando exportas a Recordatorios, para listar tus listas y añadir los
       ingredientes sin repetir los que ya están pendientes.</li>
+      <li><strong>Notificaciones:</strong> para los avisos de recetas nuevas en tus tribus y, en Mac, para avisar cuando
+      termina un temporizador.</li>
+      <li><strong>Alarmas</strong> (iPhone y iPad): para que suene una alarma al terminar un temporizador de cocina,
+      aunque el dispositivo esté bloqueado o en silencio.</li>
       </ul>
 
-      <h3 id="es-funciones-que-llegaran">Funciones que llegarán</h3>
-      <p>Está en desarrollo la captura de recetas desde una web, una foto o un texto. Su lectura y estructuración se
-      harán en el propio dispositivo. <strong>Esta política se actualizará antes de activarla</strong>, explicando qué
-      datos usa.</p>
-
       <h3 id="es-etiqueta-de-privacidad-en-el-app-store">Etiqueta de privacidad en el App Store</h3>
-      <p>CookTribe declara: <strong>email, nombre, ID de usuario, fotos y otro contenido del usuario</strong>, usados
-      para la funcionalidad de la app, vinculados a tu identidad y <strong>sin rastreo</strong>.</p>
+      <p>CookTribe declara: <strong>email, nombre (tu alias), ID de usuario, ID de dispositivo (para los avisos),
+      fotos y otro contenido del usuario</strong>, usados para la funcionalidad de la app, vinculados a tu identidad y <strong>sin
+      rastreo</strong>.</p>
+
+      <h3 id="es-cuanto-tiempo-se-guardan">Cuánto tiempo se guardan</h3>
+      <ul>
+      <li>Tus datos se guardan mientras tengas la cuenta.</li>
+      <li>Las fotos que ya no pertenecen a ninguna receta se eliminan del servidor en la limpieza diaria, pasadas 24
+      horas.</li>
+      <li>Las invitaciones caducadas o revocadas se eliminan a los 30 días.</li>
+      <li>Los avisos que no se pueden entregar se descartan en una hora, y los identificadores de dispositivo que Apple
+      da por inválidos se borran.</li>
+      </ul>
 
       <h3 id="es-como-borrar-tus-datos">Cómo borrar tus datos</h3>
       <ul>
-      <li>Desde la app: en tu espacio personal, pestaña Tribu › Borrar cuenta. Se borran tu cuenta, tu perfil y tu
-      espacio personal con todo su contenido, en el servidor y en el dispositivo. Si entraste con Apple, además se
-      revoca el acceso de CookTribe a tu Apple ID.</li>
-      <li>Las tribus que creaste pasan a su miembro más antiguo o, si no queda nadie, se eliminan. Lo que aportaste a
-      tribus que siguen existiendo se queda en ellas, y quienes tenían recetas tuyas compartidas por enlace conservan
-      una copia.</li>
-      <li>Las fotos que ya no pertenecen a ninguna receta se eliminan del servidor en la limpieza diaria.</li>
-      <li>Al cerrar sesión se conserva la copia local para cuando vuelvas a entrar.</li>
-      <li>También puedes pedir el borrado o una copia de tus datos escribiendo a
+      <li>Desde la app: pestaña Tribu › Ajustes y cuenta › Borrar cuenta. Se borran al momento tu cuenta, tu perfil y
+      tu alias, tu espacio personal con tus recetarios, recetas, fotos, lista y plan, las recetas que habías guardado y
+      tus dispositivos de avisos, en el servidor y en tu dispositivo. Si entraste con Apple, además se revoca el acceso
+      de CookTribe a tu Apple ID.</li>
+      <li>Las tribus que creaste pasan a su miembro más antiguo o, si no queda nadie, se eliminan. Lo que añadiste a la
+      lista o al plan de tribus que siguen existiendo se queda en ellas, y quienes habían guardado recetas tuyas
+      conservan una copia.</li>
+      <li>Tus fotos se eliminan del almacenamiento en la siguiente limpieza diaria.</li>
+      <li>Al cerrar sesión se borra la copia local del dispositivo; si quedaban cambios sin subir, se conserva para
+      subirlos cuando vuelvas a entrar.</li>
+      <li>Puedes exportar tus recetas a PDF en Ajustes y cuenta antes de borrar la cuenta, y también pedir el borrado o
+      una copia de tus datos escribiendo a
       <a href="mailto:naszen013@gmail.com?subject=CookTribe">naszen013@gmail.com</a>.</li>
       </ul>
 
@@ -196,13 +250,15 @@ d.setAttribute('data-lang',l);d.lang=l;})();
       <p>On this page</p>
       <a href="#en-controller">Controller</a>
       <a href="#en-what-data-is-stored-and-where">What data is stored, and where</a>
+      <a href="#en-what-stays-on-your-device">What stays on your device</a>
       <a href="#en-who-can-see-your-data">Who can see your data</a>
       <a href="#en-what-it-s-used-for">What it's used for</a>
+      <a href="#en-notifications">Notifications</a>
       <a href="#en-third-party-services">Third-party services</a>
-      <a href="#en-exporting-the-shopping-list">Exporting the shopping list</a>
+      <a href="#en-exporting-recipes-and-the-shopping-list">Exporting recipes and the shopping list</a>
       <a href="#en-permissions">Permissions</a>
-      <a href="#en-features-on-the-way">Features on the way</a>
       <a href="#en-app-store-privacy-label">App Store privacy label</a>
+      <a href="#en-how-long-it-s-kept">How long it's kept</a>
       <a href="#en-how-to-delete-your-data">How to delete your data</a>
       <a href="#en-your-rights">Your rights</a>
       <a href="#en-children">Children</a>
@@ -210,12 +266,12 @@ d.setAttribute('data-lang',l);d.lang=l;})();
     </nav>
     <article class="legal__body">
       <h2>CookTribe Privacy Policy</h2>
-      <p class="legal__meta">Last updated: September 30, 2026</p>
+      <p class="legal__meta">Last updated: October 7, 2026</p>
 
-      <p>CookTribe is a cookbook app for organising recipes, planning meals and building your shopping list, on your own
-      or with your tribe. It needs an account to keep your recipes on all your devices and share them with the people
-      you choose. <strong>We store the minimum to make it work and nothing more: no ads, no analytics and no
-      tracking.</strong> We never sell or share your data for commercial purposes.</p>
+      <p>CookTribe is a cookbook app for iPhone, iPad and Mac for keeping recipes, planning meals and building your
+      shopping list, on your own or with your tribe. It needs an account to keep your recipes on all your devices and
+      share them with your tribes. <strong>We store the minimum to make it work and nothing more: no ads, no analytics
+      and no tracking.</strong> We never sell or share your data for commercial purposes.</p>
 
       <h3 id="en-controller">Controller</h3>
       <p>David Tejedor Ayet, developer of CookTribe. Contact:
@@ -225,84 +281,139 @@ d.setAttribute('data-lang',l);d.lang=l;})();
       <ul>
       <li><strong>Your account.</strong> You sign in with Apple or Google; there is no email-and-password sign-up. With
       Apple we only ask for your email, never your name, and you can choose to hide it. With Google we request the
-      basic <em>openid, email and profile</em> scopes, and the name and profile picture Google shares are stored. Your
-      email, a user identifier, your display name (if any) and the technical session data the authentication system
-      records (such as your last sign-in date) are stored.</li>
-      <li><strong>Your content.</strong> Cookbooks, recipes (with their ingredients, steps, notes, tags and source URL),
-      recipe and step photos, shopping lists, weekly plan, favourites, your tribes and their members with their role,
-      and the recipes other people have shared with you.</li>
+      basic <em>openid, email and profile</em> scopes. Your email, a user identifier, the address of the profile
+      picture your provider shares (if any) and the technical session data the authentication system records (such as
+      your last sign-in date) are stored.</li>
+      <li><strong>Your alias.</strong> When you sign in you choose the name others will see; the name on your Apple or
+      Google account is not copied. You can change it anytime from your account.</li>
+      <li><strong>Your content.</strong> Cookbooks and recipes (with their ingredients, steps, notes, tags, category and
+      source URL), recipe and step photos, other people's recipes you've saved, favourites, your shopping lists and
+      weekly plans, and your tribes with their members, roles and invitations.</li>
+      <li><strong>Notifications.</strong> If you turn notifications on, each device's Apple notification identifier,
+      its environment and language, and which tribes you want notifications from.</li>
       <li><strong>Server.</strong> All of the above is stored with <strong>Supabase</strong>, on servers in the European
-      Union (Frankfurt, Germany), and is encrypted in transit. Supabase acts as data processor. Each space is protected
-      by access rules so only its members can see its content. Photos are kept in private storage, as JPEG, downsized
-      to 2048 px at most and with no location or EXIF metadata.</li>
+      Union (Frankfurt, Germany), and is encrypted in transit. Supabase acts as data processor. Access rules on the
+      server make sure each person can only read what they're meant to (see "Who can see your data"). Photos are kept
+      in private storage, as JPEG, downsized to 2048 px at most and with no location or EXIF metadata: the app
+      re-encodes them on your device before uploading.</li>
       <li><strong>On your device.</strong> A local copy of your data so the app works offline (your changes upload when
       the connection returns), recipe drafts you haven't saved yet, and your session in that device's Keychain.</li>
       </ul>
 
+      <h3 id="en-what-stays-on-your-device">What stays on your device</h3>
+      <ul>
+      <li><strong>Scanning or photographing a recipe:</strong> the text is read with Apple's text recognition (Vision)
+      on your device. Only the photo you choose to attach to the recipe is kept; the other scanned pages are
+      discarded.</li>
+      <li><strong>Pasting text or importing from a website:</strong> the recipe is structured on your device, with Apple
+      Intelligence if your device supports it or, otherwise, with the app's own rules. No text is sent to external AI
+      services.</li>
+      <li><strong>Importing from a website:</strong> your device downloads the page (and its main photo) directly from
+      that website, just like a browser; CookTribe does not route it through any server of its own. The website may log
+      that visit like any other.</li>
+      <li><strong>Timers, widget, Spotlight and Handoff:</strong> cooking-mode timers, the shopping list widget, finding
+      your recipes in Spotlight and Handoff work through system features, on your devices.</li>
+      <li><strong>Exporting my recipes to PDF:</strong> the document is created on your device.</li>
+      </ul>
+
       <h3 id="en-who-can-see-your-data">Who can see your data</h3>
       <ul>
-      <li><strong>Your personal space</strong> is visible only to you.</li>
-      <li><strong>A tribe</strong> is visible to its members: editors can add and change content, readers can only view
-      it. Members also see your display name, never your email. Invitations are single-use links that expire after 7
-      days; the server only keeps a fingerprint of the link, not the link itself.</li>
+      <li><strong>Your recipes and cookbooks</strong> are visible to you and to the members of all your tribes. There
+      are no private recipes: if you're not in any tribe and don't share a recipe by link, only you see it. Only you
+      can edit them.</li>
+      <li><strong>Recipes others save.</strong> If someone saves one of your recipes, that person and the members of
+      their tribes keep seeing it, read-only, even if you no longer share a tribe. If you delete the recipe, whoever
+      saved it keeps their own copy.</li>
+      <li><strong>Your personal shopping list and plan</strong> are visible only to you.</li>
+      <li><strong>A tribe's shopping list and plan</strong> are visible to its members: editors can change them and
+      readers can only view them.</li>
+      <li><strong>Your alias</strong> is visible to the members of your tribes, to anyone who receives an invitation
+      from you and to anyone who sees one of your recipes, as is the link to your provider's profile photo, if any.
+      Your email is never shown to other people.</li>
+      <li><strong>Invitations.</strong> They're sent as links and expire; the server only keeps a fingerprint of the
+      link, not the link itself.</li>
       <li><strong>A recipe shared by link</strong> can be viewed, live and read-only, by anyone with the link and a
-      CookTribe account, along with your display name, until you revoke the link or delete the recipe. Whoever added it
-      can save their own copy, and if you stop sharing it or delete it, they keep a copy.</li>
+      CookTribe account, along with your alias, and added to their cookbooks. If you stop sharing it, the link stops
+      working for anyone who hadn't added it yet; those who already had it keep it.</li>
       </ul>
 
       <h3 id="en-what-it-s-used-for">What it's used for</h3>
-      <p>Only to make the app work: to identify you, sync your content across your devices and share it with the tribes
-      and people you choose. The legal basis is performing the service you request when you create the account.</p>
+      <p>Only to make the app work: to identify you, sync your content across your devices, share it with your tribes
+      and notify you about new recipes if you ask for it. The legal basis is performing the service you request when
+      you create the account.</p>
+
+      <h3 id="en-notifications">Notifications</h3>
+      <p>CookTribe asks whether you want notifications when you create or join a tribe, and you can turn them off per
+      tribe in the Tribe tab. When a member creates or saves a recipe, the server sends the notification through
+      Apple's notification service (APNs) with that person's alias, the recipe title and the tribe name. Signing out or
+      deleting your account unregisters the device.</p>
 
       <h3 id="en-third-party-services">Third-party services</h3>
       <ul>
-      <li><strong>Supabase</strong> (database hosting, authentication and photo storage, in the EU).</li>
+      <li><strong>Supabase</strong> (database, authentication and photo storage, in the EU).</li>
       <li><strong>Apple</strong> and <strong>Google</strong>, only for the sign-in you choose.</li>
-      <li><strong>Cloudflare</strong>, which serves the pages behind invitation (<code>/i/</code>) and shared recipe
-      (<code>/s/</code>) links and the Bring! export. That service stores nothing and keeps no request logs, and the
-      link pages contain no tribe or recipe data: they only open the app or download it.</li>
+      <li><strong>Apple (APNs)</strong>, to deliver notifications if you turn them on.</li>
+      <li><strong>Cloudflare</strong>, which serves the pages behind invitation and shared recipe links and the Bring!
+      export. That service stores nothing and keeps no request logs, and the link pages contain no tribe or recipe
+      data: they only open the app or download it.</li>
       </ul>
       <p>There are no third-party analytics, advertising or crash-reporting SDKs.</p>
 
-      <h3 id="en-exporting-the-shopping-list">Exporting the shopping list</h3>
+      <h3 id="en-exporting-recipes-and-the-shopping-list">Exporting recipes and the shopping list</h3>
       <p>Your data only leaves for other apps when you ask it to:</p>
       <ul>
       <li><strong>Bring!:</strong> the recipe or list name, the servings and each ingredient with its quantity travel
       inside a link that Bring! opens through Cloudflare. Ingredient notes and any identifier of your account, tribe or
-      device are never sent. Cloudflare (which processes the request), Bring! and anyone with that link can see it.</li>
+      device are never sent. Cloudflare (which processes the request without storing it), Bring! and anyone with that
+      link can see it.</li>
       <li><strong>Reminders:</strong> ingredients are added to the Reminders list you choose, on your device.</li>
+      <li><strong>Keppi:</strong> the items are handed directly to the Keppi app on your device.</li>
       <li><strong>Google Keep and other apps:</strong> through the system share sheet, which hands the text to the app
       you pick.</li>
       </ul>
 
       <h3 id="en-permissions">Permissions</h3>
       <ul>
-      <li><strong>Camera:</strong> only when you choose to take a photo of a recipe.</li>
+      <li><strong>Camera</strong> (iPhone and iPad): only when you choose to take a photo or scan a recipe. The Mac app
+      doesn't use the camera: you pick photos or files, or drag them in.</li>
       <li><strong>Photos:</strong> no access to your photo library is requested; photos are picked with the system
       picker, which only hands the app the photo you choose.</li>
       <li><strong>Reminders:</strong> only when you export to Reminders, to list your lists and add the ingredients
       without repeating those already pending.</li>
+      <li><strong>Notifications:</strong> for new-recipe notifications from your tribes and, on Mac, to let you know when
+      a timer ends.</li>
+      <li><strong>Alarms</strong> (iPhone and iPad): to sound an alarm when a cooking timer ends, even if the device is
+      locked or on silent.</li>
       </ul>
 
-      <h3 id="en-features-on-the-way">Features on the way</h3>
-      <p>Capturing recipes from a website, a photo or a text is in development. Reading and structuring them will happen
-      on the device itself. <strong>This policy will be updated before it is turned on</strong>, explaining what data it
-      uses.</p>
-
       <h3 id="en-app-store-privacy-label">App Store privacy label</h3>
-      <p>CookTribe declares: <strong>email, name, user ID, photos and other user content</strong>, used for app
-      functionality, linked to your identity and <strong>not used for tracking</strong>.</p>
+      <p>CookTribe declares: <strong>email, name (your alias), user ID, device ID (for notifications), photos and
+      other user content</strong>, used for
+      app functionality, linked to your identity and <strong>not used for tracking</strong>.</p>
+
+      <h3 id="en-how-long-it-s-kept">How long it's kept</h3>
+      <ul>
+      <li>Your data is kept for as long as you have an account.</li>
+      <li>Photos that no longer belong to any recipe are removed from the server in the daily clean-up, after 24
+      hours.</li>
+      <li>Expired or revoked invitations are deleted after 30 days.</li>
+      <li>Notifications that can't be delivered are dropped within an hour, and device identifiers Apple reports as
+      invalid are deleted.</li>
+      </ul>
 
       <h3 id="en-how-to-delete-your-data">How to delete your data</h3>
       <ul>
-      <li>In the app: in your personal space, Tribe tab › Delete account. This deletes your account, your profile and
-      your personal space with all its content, on the server and on the device. If you signed in with Apple,
-      CookTribe's access to your Apple ID is also revoked.</li>
+      <li>In the app: Tribe tab › Settings and account › Delete account. This immediately deletes your account, your
+      profile and alias, your personal space with your cookbooks, recipes, photos, list and plan, the recipes you had
+      saved and your notification devices, on the server and on your device. If you signed in with Apple, CookTribe's
+      access to your Apple ID is also revoked.</li>
       <li>Tribes you created pass to their longest-standing member or, if nobody is left, are deleted. What you added to
-      tribes that still exist stays there, and people who had your recipes shared by link keep a copy.</li>
-      <li>Photos that no longer belong to any recipe are removed from the server in the daily clean-up.</li>
-      <li>Signing out keeps the local copy for when you sign back in.</li>
-      <li>You can also request deletion or a copy of your data by writing to
+      the list or plan of tribes that still exist stays there, and people who had saved your recipes keep a copy.</li>
+      <li>Your photos are removed from storage in the next daily clean-up.</li>
+      <li>Signing out deletes the local copy from the device; if there were changes not yet uploaded, it is kept so they
+      can upload when you sign back in.</li>
+      <li>You can export your recipes to PDF from Settings and account before deleting your account, and you can also
+      request deletion or a copy of your data by writing to
       <a href="mailto:naszen013@gmail.com?subject=CookTribe">naszen013@gmail.com</a>.</li>
       </ul>
 
