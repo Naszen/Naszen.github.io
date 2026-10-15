@@ -57,6 +57,7 @@ d.setAttribute('data-lang',l);d.lang=l;})();
       <p>En esta página</p>
       <a href="#es-donde-estan-tus-datos">Dónde están tus datos</a>
       <a href="#es-avisos">Avisos</a>
+      <a href="#es-actualizacion-de-horarios">Actualización de horarios</a>
       <a href="#es-propinas">Propinas</a>
       <a href="#es-enlaces-externos-solo-cuando-tu-lo-pides">Enlaces externos (solo cuando tú lo pides)</a>
       <a href="#es-permisos">Permisos</a>
@@ -83,12 +84,26 @@ d.setAttribute('data-lang',l);d.lang=l;})();
       cualquier app, solo viajan dentro de la copia de seguridad del dispositivo si la tienes activada en iCloud o en tu
       ordenador.</li>
       <li><strong>El catálogo del juego</strong> (recetas, mapa, base de datos, guías y builds) va dentro de la app y se
-      actualiza con cada versión. Consultarlo no envía nada a ningún servidor.</li>
+      actualiza con cada versión; los horarios, las fechas de los eventos y la lista de servidores, además, se ponen al
+      día solos (ver <a href="#es-actualizacion-de-horarios">Actualización de horarios</a>). Consultarlo no envía nada a
+      ningún servidor.</li>
       </ul>
 
       <h3 id="es-avisos">Avisos</h3>
       <p>Los avisos de reinicios y eventos son notificaciones locales que la app programa en el propio dispositivo. No
       pasan por ningún servidor. Para mostrarlos, la app pide el permiso de notificaciones del sistema.</p>
+
+      <h3 id="es-actualizacion-de-horarios">Actualización de horarios</h3>
+      <p>Para tener al día los reinicios, los eventos, las fechas de la temporada y la lista de servidores sin esperar a
+      una versión nueva, la app descarga, como mucho una vez por hora al abrirla, un pequeño fichero público de datos
+      desde <a href="https://naszen.github.io/aionguide/data/v1/live.json">naszen.github.io</a>, alojado en GitHub Pages.
+      La petición no lleva ningún dato tuyo, ni cuenta ni identificador. Como en cualquier visita a una web, GitHub y su
+      red de distribución (Fastly) ven tu dirección IP y los datos técnicos de la conexión (versión de la app y del
+      sistema, idioma), y los tratan según la
+      <a href="https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement">declaración de privacidad de GitHub</a>.
+      El desarrollador no recibe ni consulta esos registros. El fichero va firmado y la app lo comprueba antes de usarlo y
+      guarda en el dispositivo la última copia válida; si no puede descargarlo o no es válido, sigue con los datos que
+      ya tiene.</p>
 
       <h3 id="es-propinas">Propinas</h3>
       <ul>
@@ -150,6 +165,7 @@ d.setAttribute('data-lang',l);d.lang=l;})();
       <p>On this page</p>
       <a href="#en-where-your-data-lives">Where your data lives</a>
       <a href="#en-alerts">Alerts</a>
+      <a href="#en-schedule-updates">Schedule updates</a>
       <a href="#en-tips">Tips</a>
       <a href="#en-external-links-only-when-you-ask">External links (only when you ask)</a>
       <a href="#en-permissions">Permissions</a>
@@ -175,12 +191,25 @@ d.setAttribute('data-lang',l);d.lang=l;})();
       <li><strong>No iCloud.</strong> The app does not sync your data with iCloud or send it anywhere. As with any app,
       it only travels inside your device backup if you have backups turned on in iCloud or on your computer.</li>
       <li><strong>The game catalog</strong> (recipes, map, database, guides and builds) ships inside the app and is
-      updated with every release. Browsing it sends nothing to any server.</li>
+      updated with every release; schedules, event dates and the server list also update on their own (see
+      <a href="#en-schedule-updates">Schedule updates</a>). Browsing it sends nothing to any server.</li>
       </ul>
 
       <h3 id="en-alerts">Alerts</h3>
       <p>Reset and event alerts are local notifications that the app schedules on the device itself. They do not go
       through any server. To show them, the app asks for the system notification permission.</p>
+
+      <h3 id="en-schedule-updates">Schedule updates</h3>
+      <p>To keep resets, events, season dates and the server list current without waiting for a new release, the app
+      downloads, at most once an hour when you open it, a small public data file from
+      <a href="https://naszen.github.io/aionguide/data/v1/live.json">naszen.github.io</a>, hosted on GitHub Pages. The
+      request carries none of your data, no account and no identifier. As with any website visit, GitHub and its delivery
+      network (Fastly) see your IP address and technical details of the connection (app and system version, language),
+      and handle them under the
+      <a href="https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement">GitHub General Privacy Statement</a>.
+      The developer neither receives nor accesses those logs. The file is signed, the app checks it before using it and
+      keeps the last valid copy on the device; if it cannot be downloaded or is not valid, the app keeps using the data it
+      already has.</p>
 
       <h3 id="en-tips">Tips</h3>
       <ul>
